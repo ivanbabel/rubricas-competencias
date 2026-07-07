@@ -1,0 +1,591 @@
+/* css/styles.css — Rúbrica interactiva · Junta de Andalucía
+   Asistente por pasos accesible (WCAG 2.1 AA). Sistema de diseño con escalas
+   coherentes de espaciado y tipografía; selector de grado en segmentos táctiles. */
+
+:root {
+  /* ---- Color: paleta oficial Junta de Andalucía ----
+     Decreto 218/2020 · Manual de Diseño Gráfico.
+     Tríada esencial: Pantone 356 C, Pantone 7740 C, Pantone Black C.
+     Complementaria: Pantone 322 C + Cool Grays. */
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f5f9f6;          /* relleno suave alternativo (matiz del 356) */
+  --text: #2e2925;               /* Pantone Black C — negro corporativo */
+  --muted: #555559;              /* Cool Gray 11 C — AA sobre blanco y verde-soft */
+  --border: #dcdddf;             /* gris frío suave (degradado de Cool Gray 3) */
+  --border-strong: #9b9b9a;      /* Cool Gray 7 C */
+  --danger: #a3231b;
+  --danger-soft: #fdeceb;
+
+  --verde-junta: #007932;        /* Pantone 356 C — verde corporativo principal */
+  --verde-junta-2: #368f3f;      /* Pantone 7740 C — segundo verde (acentos) */
+  --verde-junta-dark: #005a25;   /* degradado oscuro del 356 — texto/títulos (AA) */
+  --verde-junta-deep: #00431c;   /* degradado más oscuro — titulares */
+  --verde-junta-soft: #eaf3ec;   /* relleno de panels/badges (matiz del 356) */
+  --verde-junta-tint: #f3f9f4;   /* relleno aún más suave */
+  --teal: #007078;               /* Pantone 322 C — acento complementario (uso mínimo) */
+  --on-verde: #ffffff;
+
+  --focus: #2e2925;              /* Pantone Black C — foco de alto contraste y de marca */
+
+  /* ---- Espaciado (escala 4) ---- */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+  --sp-8: 64px;
+
+  /* ---- Tipografía ---- */
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+  --fs-eyebrow: .8rem;
+  --fs-small: .9rem;
+  --fs-body: 1rem;
+  --fs-lead: 1.075rem;
+  --fs-h3: clamp(1.05rem, 1.4vw, 1.2rem);
+  --fs-h2: clamp(1.35rem, 2.2vw, 1.7rem);
+  --fs-h1: clamp(1.75rem, 3.4vw, 2.4rem);
+  --fs-kpi: clamp(2.75rem, 6vw, 3.75rem);
+
+  /* ---- Forma y elevación ---- */
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 18px;
+  --radius-pill: 999px;
+  --elev-1: 0 1px 2px rgba(0, 40, 15, .06), 0 2px 8px rgba(0, 40, 15, .05);
+  --elev-2: 0 4px 12px rgba(0, 40, 15, .08), 0 12px 32px rgba(0, 40, 15, .07);
+  --ring: 0 0 0 4px rgba(0, 121, 50, .16);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+html, body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 var(--sp-4) var(--sp-8);
+}
+
+/* --- Utilidades --- */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  margin: -1px; padding: 0; border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+.muted { color: var(--muted); }
+.small { font-size: var(--fs-small); }
+
+/* --- Foco visible global --- */
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* --- Enlace de salto --- */
+.skip-link {
+  position: absolute;
+  left: -999px; top: 0;
+  z-index: 1000;
+  background: var(--verde-junta);
+  color: var(--on-verde);
+  padding: var(--sp-3) var(--sp-4);
+  border-radius: 0 0 var(--radius-sm) 0;
+  font-weight: 600;
+}
+.skip-link:focus { left: 0; }
+
+/* ===================== Cabecera ===================== */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-5) var(--sp-6);
+  max-width: 940px;
+  margin: 0 auto;
+  padding: var(--sp-6) var(--sp-4) var(--sp-4);
+}
+/* Área de protección del logotipo (manual de identidad): aire a su alrededor.
+   align-self:center lo centra verticalmente respecto al bloque .site-heading. */
+.site-logo { width: 232px; max-width: 66vw; height: auto; align-self: center; }
+.site-heading {
+  flex: 1 1 320px;
+  padding-left: var(--sp-6);
+  border-left: 1.5px solid var(--border);
+}
+.kicker {
+  margin: 0 0 var(--sp-2);
+  color: var(--muted);
+  font-size: var(--fs-eyebrow);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.site-header h1 {
+  margin: 0;
+  color: var(--verde-junta-deep);
+  font-size: var(--fs-h1);
+  line-height: 1.1;
+  letter-spacing: -.015em;
+}
+.rol {
+  margin: var(--sp-2) 0 0;
+  font-size: var(--fs-lead);
+  font-weight: 600;
+  color: var(--text);
+}
+.header-rule {
+  max-width: 940px;
+  margin: 0 auto;
+  height: 3px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  /* Acento institucional: los dos verdes corporativos (356 → 7740). */
+  background: linear-gradient(90deg, var(--verde-junta), var(--verde-junta-2));
+}
+
+/* ===================== Intro / escala ===================== */
+.intro { margin: var(--sp-6) 0 var(--sp-5); }
+.definition {
+  font-size: var(--fs-lead);
+  margin: 0 0 var(--sp-4);
+}
+
+/* Leyenda de la escala: 4 tarjetas con acento verde graduado (claro → oscuro),
+   que comunica visualmente la intensidad de cada grado. */
+.legend {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--elev-1);
+  padding: var(--sp-4);
+}
+.legend-title {
+  margin: 0 0 var(--sp-3);
+  font-size: var(--fs-small);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: var(--verde-junta-dark);
+}
+.legend-list {
+  list-style: none;
+  margin: 0; padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-3);
+}
+.legend-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+  padding: var(--sp-3);
+  border-radius: var(--radius);
+  background: var(--verde-junta-tint);
+  border-top: 4px solid var(--verde-junta);
+}
+.legend-item:nth-child(1) { border-top-color: #b8dcc6; }
+.legend-item:nth-child(2) { border-top-color: #7bbd94; }
+.legend-item:nth-child(3) { border-top-color: var(--verde-junta-2); }
+.legend-item:nth-child(4) { border-top-color: var(--verde-junta-dark); }
+.legend-grade { font-weight: 700; color: var(--verde-junta-dark); }
+.legend-desc { color: var(--muted); font-size: var(--fs-small); line-height: 1.35; }
+
+/* ===================== Barra de progreso (stepper) ===================== */
+.stepper { margin: var(--sp-5) 0; }
+.stepper-list {
+  list-style: none;
+  margin: 0; padding: 0 0 26px;      /* hueco inferior para las etiquetas ancladas */
+  position: relative;
+  display: flex;
+  justify-content: space-between;    /* primer punto al borde izq., último al der. */
+}
+/* Línea de progreso: pista gris a lo ancho + relleno verde hasta el paso actual */
+.stepper-list::before,
+.stepper-list::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  height: 3px;
+  border-radius: var(--radius-pill);
+}
+.stepper-list::before { left: 20px; right: 20px; background: var(--border); }
+.stepper-list::after {
+  left: 20px;
+  width: calc((100% - 40px) * var(--progress, 0));
+  background: var(--verde-junta);
+  transition: width .2s ease;
+}
+.stepper-item {
+  position: relative;
+  z-index: 1;
+  flex: 0 0 40px;
+}
+.stepper-btn {
+  display: block;
+  width: 40px;
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: var(--muted);
+  font: inherit;
+}
+.stepper-dot {
+  display: grid;
+  place-items: center;
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 2px solid var(--border-strong);
+  color: var(--muted);
+  font-weight: 700;
+  transition: transform .15s ease, background .15s ease, border-color .15s ease;
+}
+.stepper-label {
+  position: absolute;
+  top: 46px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: var(--fs-eyebrow);
+  font-weight: 600;
+  color: inherit;
+}
+.stepper-item:first-child .stepper-label { left: 0; transform: none; text-align: left; }
+.stepper-item:last-child  .stepper-label { left: auto; right: 0; transform: none; text-align: right; }
+.stepper-item.is-done .stepper-dot {
+  background: var(--verde-junta);
+  border-color: var(--verde-junta);
+  color: var(--on-verde);
+}
+.stepper-item.is-current .stepper-dot {
+  background: var(--surface);
+  border-color: var(--verde-junta);
+  color: var(--verde-junta-dark);
+  box-shadow: var(--ring);
+}
+.stepper-item.is-current .stepper-btn,
+.stepper-item.is-done .stepper-btn { color: var(--verde-junta-dark); }
+.stepper-btn:focus-visible { outline: none; }
+.stepper-btn:focus-visible .stepper-dot {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* ===================== Paso / panel ===================== */
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--elev-1);
+  padding: var(--sp-6);
+}
+.step[hidden] { display: none; }
+
+.step-header { margin-bottom: var(--sp-5); }
+.step-eyebrow {
+  margin: 0 0 var(--sp-2);
+  color: var(--verde-junta-dark);
+  font-size: var(--fs-eyebrow);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.step-title {
+  margin: 0;
+  color: var(--verde-junta-deep);
+  font-size: var(--fs-h2);
+  line-height: 1.2;
+  letter-spacing: -.01em;
+}
+.step-title:focus-visible { outline-offset: 4px; }
+.step-desc {
+  margin: var(--sp-3) 0 0;
+  color: var(--text);
+}
+
+/* Puntuación del paso + nivel, alineados en una fila */
+.step-score {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+  margin-top: var(--sp-4);
+}
+.score-pill {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 2px;
+  padding: var(--sp-2) var(--sp-3);
+  border-radius: var(--radius-pill);
+  background: var(--verde-junta-soft);
+  color: var(--verde-junta-deep);
+  font-variant-numeric: tabular-nums;
+}
+.score-num { font-size: 1.2rem; font-weight: 600; }
+.score-den { font-size: var(--fs-small); color: var(--verde-junta-dark); }
+.step-note { margin: var(--sp-2) 0 0; color: var(--muted); max-width: 70ch; }
+
+/* Badge de nivel */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  background: var(--surface);
+  border: 1.5px solid var(--verde-junta);
+  color: var(--verde-junta-dark);
+  font-weight: 700;
+  padding: var(--sp-2) var(--sp-3);
+  border-radius: var(--radius-pill);
+  line-height: 1.1;
+}
+.badge::before {
+  content: "";
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: var(--verde-junta);
+}
+.badge.is-empty { border-color: var(--border-strong); color: var(--muted); }
+.badge.is-empty::before { background: var(--border-strong); }
+.badge-lg { font-size: var(--fs-lead); padding: var(--sp-3) var(--sp-4); }
+
+/* ===================== Item (actuación) + segmentos ===================== */
+.items { display: flex; flex-direction: column; gap: var(--sp-4); }
+.item {
+  margin: 0; padding: var(--sp-5);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+}
+.item-legend {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-3);
+  margin: 0 0 var(--sp-4);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text);
+}
+.item-index {
+  flex: 0 0 auto;
+  margin-top: 1px;
+  display: grid;
+  place-items: center;
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: var(--verde-junta-soft);
+  color: var(--verde-junta-dark);
+  font-size: var(--fs-small);
+  font-weight: 700;
+}
+
+.segments {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-2);
+}
+.seg { position: relative; margin: 0; cursor: pointer; display: flex; }
+.seg input {
+  position: absolute;
+  opacity: 0;
+  width: 1px; height: 1px;
+  margin: 0;
+}
+.seg-body {
+  flex: 1;               /* iguala la altura de los 4 segmentos de la fila */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  min-height: 60px;
+  padding: var(--sp-3);
+  border: 1.5px solid var(--border-strong);
+  border-radius: var(--radius);
+  background: var(--surface);
+  transition: border-color .12s ease, background .12s ease, box-shadow .12s ease;
+}
+.seg-grade { font-weight: 800; color: var(--verde-junta-dark); white-space: nowrap; }
+.seg-desc { font-size: var(--fs-small); color: var(--muted); line-height: 1.25; }
+.seg-check {
+  position: absolute;
+  top: var(--sp-2); right: var(--sp-2);
+  display: grid; place-items: center;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: var(--verde-junta);
+  color: var(--on-verde);
+  font-size: 13px; font-weight: 700;
+  opacity: 0;
+  transform: scale(.6);
+  transition: opacity .12s ease, transform .12s ease;
+}
+.seg:hover .seg-body { border-color: var(--verde-junta-2); background: var(--verde-junta-tint); }
+.seg input:checked + .seg-body {
+  border-color: var(--verde-junta);
+  background: var(--verde-junta-soft);
+  box-shadow: inset 0 0 0 1.5px var(--verde-junta);
+}
+.seg input:checked + .seg-body .seg-check { opacity: 1; transform: scale(1); }
+.seg input:focus-visible + .seg-body {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* ===================== Navegación del paso ===================== */
+.step-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  margin-top: var(--sp-6);
+  padding-top: var(--sp-5);
+  border-top: 1px solid var(--border);
+}
+.step-nav.end-only { justify-content: flex-end; }
+
+/* ===================== Botones ===================== */
+.btn {
+  --btn-bg: var(--verde-junta);
+  --btn-fg: var(--on-verde);
+  --btn-bd: var(--verde-junta);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  background: var(--btn-bg);
+  border: 1.5px solid var(--btn-bd);
+  color: var(--btn-fg);
+  padding: var(--sp-3) var(--sp-5);
+  border-radius: var(--radius);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .12s ease, border-color .12s ease, transform .06s ease;
+}
+.btn:hover { --btn-bg: var(--verde-junta-dark); --btn-bd: var(--verde-junta-dark); }
+.btn:active { transform: translateY(1px); }
+.btn.primary { font-weight: 700; box-shadow: var(--elev-1); }
+.btn-ghost {
+  --btn-bg: transparent;
+  --btn-fg: var(--verde-junta-dark);
+  --btn-bd: var(--border-strong);
+}
+.btn-ghost:hover {
+  --btn-bg: var(--verde-junta-soft);
+  --btn-fg: var(--verde-junta-dark);
+  --btn-bd: var(--verde-junta);
+}
+.btn[disabled] { opacity: .45; cursor: not-allowed; }
+.btn[disabled]:active { transform: none; }
+.btn-row { display: flex; gap: var(--sp-3); flex-wrap: wrap; margin: var(--sp-5) 0 var(--sp-3); }
+
+/* ===================== Paso final: resultado ===================== */
+.result-step { text-align: left; }
+.result-hero {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--sp-5) var(--sp-6);
+  margin: var(--sp-5) 0;
+  padding: var(--sp-5);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--verde-junta-soft), var(--verde-junta-tint));
+  border: 1px solid var(--verde-junta);
+}
+.result-figure { flex: 0 0 auto; }
+.kpi {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  color: var(--verde-junta-deep);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+.kpi #global-score { font-size: var(--fs-kpi); font-weight: 800; letter-spacing: -.02em; }
+.kpi-unit { font-size: 1.5rem; font-weight: 700; color: var(--verde-junta-dark); }
+.result-verdict { flex: 1 1 260px; }
+.result-verdict .note { margin: var(--sp-3) 0 0; color: var(--text); max-width: 62ch; }
+
+.result-areas { display: flex; flex-direction: column; gap: var(--sp-2); margin-top: var(--sp-5); }
+.result-area {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  flex-wrap: wrap;
+  padding: var(--sp-3) var(--sp-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.result-area-name { flex: 1 1 240px; font-weight: 600; }
+.result-area .score-pill { flex: 0 0 auto; }
+
+/* ===================== Estados ===================== */
+#completado {
+  margin-top: var(--sp-4);
+  padding: var(--sp-4);
+  border-radius: var(--radius);
+  background: var(--verde-junta-soft);
+  border: 1.5px solid var(--verde-junta);
+  color: var(--verde-junta-deep);
+  font-weight: 700;
+  text-align: center;
+}
+.alert {
+  margin-top: var(--sp-4);
+  padding: var(--sp-4);
+  border: 1.5px solid var(--danger);
+  color: var(--danger);
+  background: var(--danger-soft);
+  border-radius: var(--radius);
+}
+
+/* ===================== Responsive ===================== */
+@media (max-width: 720px) {
+  .panel { padding: var(--sp-4); }
+  .item { padding: var(--sp-4); }
+  .legend-list { grid-template-columns: repeat(2, 1fr); }
+  .stepper-label { display: none; }         /* deja solo los puntos numerados */
+  .segments { grid-template-columns: repeat(2, 1fr); }
+  .site-heading { border-left: 0; padding-left: 0; }
+}
+@media (max-width: 430px) {
+  .segments { grid-template-columns: 1fr; }
+  .seg-body { flex-direction: row; align-items: center; gap: var(--sp-3); min-height: 52px; }
+  .seg-grade { flex: 0 0 auto; }
+  .seg-desc { flex: 1 1 auto; }
+  .seg-check { position: static; margin-left: auto; transform: scale(1); opacity: 0; }
+  .seg input:checked + .seg-body .seg-check { opacity: 1; }
+  .step-nav { flex-direction: column-reverse; }
+  .step-nav .btn { width: 100%; justify-content: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; animation: none !important; }
+}
+
+/* ===================== Impresión (respaldo) ===================== */
+@media print {
+  .stepper, .step-nav, .btn-row, .skip-link { display: none !important; }
+  .step[hidden] { display: block !important; }
+  .panel { box-shadow: none; border: 1px solid #ccc; }
+  body { background: #fff; color: #000; }
+}

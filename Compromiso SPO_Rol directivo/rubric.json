@@ -1,0 +1,263 @@
+{
+    "rubric_competency":  "Mapa de Competencias · Junta de Andalucía",
+    "rubric_title":  "Compromiso con el servicio público y la organización",
+    "rubric_rol":  "Rol directivo",
+    "rubric_definition":  "Asumir como propios los principios y valores de la Junta de Andalucía, actuando de forma coherente y con respeto a los mismos. Implicarse activamente en la consecución de objetivos de su organización, mostrando profesionalidad, responsabilidad e integridad en sus actuaciones. Representar con sus acciones a la Junta de Andalucía ante terceros.",
+    "rubric_instructions":  "Valora en qué grado realizas cada una de las actuaciones de los 5 comportamientos observables.",
+    "rubric_puntuation":  "Grado 1: nunca o rara vez · Grado 2: alguna vez · Grado 3: habitualmente · Grado 4: siempre o casi siempre.",
+    "language":  "es-ES",
+    "version":  "2026-07-06",
+    "scale":  {
+                  "name":  "Grados",
+                  "levels":  [
+                                 {
+                                     "value":  1,
+                                     "label":  "Grado 1",
+                                     "description":  "Nunca, rara vez. (Sin competencia) / No aplicable a mi puesto."
+                                 },
+                                 {
+                                     "value":  2,
+                                     "label":  "Grado 2",
+                                     "description":  "Alguna vez, ocasionalmente. (Nivel básico)"
+                                 },
+                                 {
+                                     "value":  3,
+                                     "label":  "Grado 3",
+                                     "description":  "Habitualmente, con frecuencia. (Nivel medio)"
+                                 },
+                                 {
+                                     "value":  4,
+                                     "label":  "Grado 4",
+                                     "description":  "Siempre, casi siempre. (Nivel alto)"
+                                 }
+                             ]
+              },
+    "scoring":  {
+                    "points_per_level":  {
+                                             "1":  1,
+                                             "2":  2,
+                                             "3":  3,
+                                             "4":  4
+                                         },
+                    "max_points_per_behavior":  4,
+                    "max_points_per_area":  16,
+                    "accredited_min_grade":  3,
+                    "global_model":  {
+                                         "model":  "quality_coverage",
+                                         "max_raw":  80,
+                                         "total_behaviors":  20,
+                                         "formula":  "100 * (raw/max_raw) * (0.5 + 0.5 * coverage)"
+                                     },
+                    "classification_rules":  {
+                                                 "area":  [
+                                                              {
+                                                                  "min":  0,
+                                                                  "max":  6,
+                                                                  "label":  "Sin competencia",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  7,
+                                                                  "max":  9,
+                                                                  "label":  "Nivel básico",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  10,
+                                                                  "max":  12,
+                                                                  "label":  "Nivel medio",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  13,
+                                                                  "max":  16,
+                                                                  "label":  "Nivel alto",
+                                                                  "description":  ""
+                                                              }
+                                                          ],
+                                                 "global":  [
+                                                                {
+                                                                    "min":  0,
+                                                                    "max":  49,
+                                                                    "label":  "Sin competencia",
+                                                                    "description":  "Ejercer un desempeño por debajo de lo esperado para una función directiva y evidenciando carencias serias en liderazgo, planificación, gestión de equipos, cumplimiento normativo o actuación ética. No transmitir adecuadamente la cultura institucional ni garantizar el compromiso con el servicio público y la organización."
+                                                                },
+                                                                {
+                                                                    "min":  50,
+                                                                    "max":  69,
+                                                                    "label":  "Nivel básico",
+                                                                    "description":  "Ejercer el desempeño de manera correcta, pero limitada en consistencia o profundidad. la aplicación de criterios de calidad, liderazgo ético o impulso a la mejora puede ser irregular o insuficiente. Requerir acompañamiento, formación o refuerzo estratégico para consolidar su rol como líder institucional."
+                                                                },
+                                                                {
+                                                                    "min":  70,
+                                                                    "max":  89,
+                                                                    "label":  "Nivel medio",
+                                                                    "description":  "Ejercer un desempeño competente y estable. Aplicar con regularidad los principios del servicio público en la gestión diaria. Cumplir con su función directiva de forma eficaz, aunque aún puede reforzar su papel como líder transformador y mejorar en alguna de las áreas clave: planificación, comunicación institucional, impulso a la innovación o supervisión del equipo."
+                                                                },
+                                                                {
+                                                                    "min":  90,
+                                                                    "max":  100,
+                                                                    "label":  "Nivel alto",
+                                                                    "description":  "Ser un referente institucional de compromiso con el servicio público y la organización, integrando y promoviendo activamente en su equipo los valores del servicio público. Liderar con ética, rigor técnico, calidad, transparencia y visión estratégica y fomentar la mejora continua en su equipo que refleja una cultura organizacional sólida y alineada con la misión institucional."
+                                                                }
+                                                            ]
+                                             }
+                },
+    "areas":  [
+                  {
+                      "id":  "co1",
+                      "index":  1,
+                      "title":  "Demostrar una conducta ética",
+                      "description":  "Actuar en todo momento con ética pública, de acuerdo con los valores y principios de la Junta de Andalucía. Tener presente que se trabaja al servicio de la ciudadanía y con responsabilidad pública.",
+                      "evidencias":  "E n c u e s t a s d e s a t i s f a c c i ó n H o j a s d e r e c l a m a c i o n e s. R e u n i o n e s d e t r a b a j o. D e n u n c i a s. C o n s u l t a s. A t e n c i ó n p r e s e n c i a l o t e l e f ó n i c a. R e s o l u c i o n e s d e c o n c e s i ó n.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co1_a1",
+                                            "text":  "Actuar con responsabilidad, integridad, honestidad, transparencia y rendición de cuentas en todas las decisiones."
+                                        },
+                                        {
+                                            "id":  "co1_a2",
+                                            "text":  "Ofrecer un servicio imparcial, equitativo y objetivo, sin sesgos ni trato desigual o discriminatorio por alguna razón (género, origen, edad, discapacidad,...)"
+                                        },
+                                        {
+                                            "id":  "co1_a3",
+                                            "text":  "Desempeñar éticamente el trabajo con diligencia, lealtad y buena fe con la Junta de Andalucía, orientado a la mejora del servicio."
+                                        },
+                                        {
+                                            "id":  "co1_a4",
+                                            "text":  "Fomentar en el equipo el comportamiento coherente con lo que se espera en una institución pública, siendo ejemplo de compromiso con el servicio público."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "No tener en cuenta los valores y principios del servicio público. Actuar de forma individualista, sin considerar el interés general ni la imagen de la organización.",
+                                                       "basico":  "Intentar seguir las normas y valores, aunque a veces necesitar recordatorios o aclaraciones. Tener una actitud correcta, pero no siempre ser consciente del impacto de sus acciones en lo público.",
+                                                       "medio":  "Conocer y respetar los valores y principios del servicio público. Actuar éticamente con responsabilidad y coherencia en su trabajo diario, mostrando compromiso con la organización.",
+                                                       "alto":  "Integrar activamente los valores públicos en su comportamiento. Ser ejemplo coherente de compromiso con el servicio público y fomentar en el equipo el comportamiento coherente con lo que se espera en una institución pública."
+                                                   }
+                  },
+                  {
+                      "id":  "co2",
+                      "index":  2,
+                      "title":  "Alinear sus objetivos y actuaciones con los principios y valores de la Junta de Andalucía",
+                      "description":  "Liderar desde el ejemplo, garantizando que los valores y principios de la Junta de Andalucía guíen tanto las decisiones estratégicas como los objetivos marcados y las actuaciones del funcionamiento global del equipo y de la organización.",
+                      "evidencias":  "O b j e t i v o s p e r s o n a l e s y d e l a u n i d a d. P l a n e s d e a c t u a c i ó n. R e u n i o n e s d e t r a b a j o. E v a l u a c i ó n d e l d e s e m p e ñ o.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co2_a1",
+                                            "text":  "Formular los objetivos de trabajo del equipo de acuerdo con los principios y valores de la Junta de Andalucía."
+                                        },
+                                        {
+                                            "id":  "co2_a2",
+                                            "text":  "Establecer planes de actuación de acuerdo con los principios y valores de la Junta de Andalucía."
+                                        },
+                                        {
+                                            "id":  "co2_a3",
+                                            "text":  "Tomar decisiones y actuar ante los cambios de acuerdo con los principios y valores de la Junta de Andalucía."
+                                        },
+                                        {
+                                            "id":  "co2_a4",
+                                            "text":  "Liderar al equipo desde el ejemplo, fomentando una cultura organizativa basada en la ética y los valores compartidos de la Junta de Andalucía."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "Tomar decisiones sin considerar los principios del servicio público. Mostrar comportamientos que contradicen los valores institucionales y transmitir una imagen incoherente.",
+                                                       "basico":  "Conocer los valores y principios de la organización, pero no siempre integrarlos en su liderazgo ni trasladalos a sus decisiones y comportamientos.",
+                                                       "medio":  "Actuar conforme a los principios y valores públicos e incorporarlos en su toma de decisiones.",
+                                                       "alto":  "Liderar desde el ejemplo, promover la cultura institucional y alinear a su equipo con los principios y valores de la Junta de Andalucía."
+                                                   }
+                  },
+                  {
+                      "id":  "co3",
+                      "index":  3,
+                      "title":  "Transmitir la misión, visión y valores de la Junta de Andalucía a las personas con las que colabora",
+                      "description":  "Implica transmitir activamente la misión institucional, su visión y sus valores, fomentar una cultura de servicio público en los equipos y asegurar que la integridad y el interés general sean el eje de la acción directiva.",
+                      "evidencias":  "O b j e t i v o s p e r s o n a l e s y d e l a u n i d a d. P l a n e s d e a c t u a c i ó n. R e u n i o n e s d e t r a b a j o. E v a l u a c i ó n d e l d e s e m p e ñ o.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co3_a1",
+                                            "text":  "Fomentar en su equipo el conocimiento de la misión, la visión y los valores institucionales de la Junta de Andalucía."
+                                        },
+                                        {
+                                            "id":  "co3_a2",
+                                            "text":  "Implantar sistemas de trabajo y seguimiento de tareas que tengan presente la misión, la visión y los valores institucionales de la Junta de Andalucía."
+                                        },
+                                        {
+                                            "id":  "co3_a3",
+                                            "text":  "Establecer medidas correctoras, conocidas por todo el equipo, ante desviaciones en los procesos que impliquen alejarse de la misión de la Junta de Andalucía."
+                                        },
+                                        {
+                                            "id":  "co3_a4",
+                                            "text":  "Realizar sesiones de evaluación y seguimiento para conocer el desempeño de la unidad en relación al cumplimiento de la misión y los valores institucionales."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "No aplicar ni exigir el cumplimiento de la misión, visión y valores. Tolerar prácticas irregulares o improvisaciones.",
+                                                       "basico":  "Conocer la misión y los valores pero no siempre integrarlas de forma sistemática en su gestión ni en la del equipo.",
+                                                       "medio":  "Aplicar y hacer cumplir la misión y valores de la Junta de Andalucía en su equipo.",
+                                                       "alto":  "Liderar el cumplimiento de la misión, visión y valores de la Junta de Andalucía por parte del equipo, alineándolo con la misión y visión de la organización."
+                                                   }
+                  },
+                  {
+                      "id":  "co4",
+                      "index":  4,
+                      "title":  "Transmitir una imagen positiva de la Junta de Andalucía y su organización cuando se relaciona con personas externas a la misma",
+                      "description":  "Implica transmitir una buena imagen de la Junta de Andalucía en cada encuentro o acto con organizaciones, instituciones, empresas y otras personas físicas o jurídicas, haciendo destacar la calidad del servicio público.",
+                      "evidencias":  "P l a n e s d e a c t u a c i ó n. R e u n i o n e s d e t r a b a j o. C o n g r e s o s. J o r n a d a s. P u b l i c a c i o n e s. W e b s. A n u n c i o s. A c t o s p ú b l i c o s y e n c u e n t r o s c i u d a d a n o s U s o d e l m a n u a l d e i d e n t i d a d c o r p o r a t i v a.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co4_a1",
+                                            "text":  "Actuar con cercanía, compromiso y profesionalidad en actos públicos o encuentros ciudadanos."
+                                        },
+                                        {
+                                            "id":  "co4_a2",
+                                            "text":  "Comunicar de manera competente, evitando mensajes, discursos o prácticas que puedan dañar la confianza institucional en la Junta de Andalucía."
+                                        },
+                                        {
+                                            "id":  "co4_a3",
+                                            "text":  "Afrontar los problemas y dificultades de la organización de manera interna, sin que se vean afectadas las relaciones con personas externas a la misma."
+                                        },
+                                        {
+                                            "id":  "co4_a4",
+                                            "text":  "Liderar con el compromiso de transmitir una imagen positiva de la Junta de Andalucía, reforzando en el equipo la cultura de orientación al servicio público."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "Transmitir una imagen negativa de la Junta de Andalucía y su organización frente a personas externas.",
+                                                       "basico":  "Intentar transmitir una imagen positiva de la Junta de Andalucía y su organización cuando se relaciona con personas externas, consiguiéndolo a veces.",
+                                                       "medio":  "Transmitir una imagen positiva de la Junta de Andalucía y su organización cuando se relaciona con personas externas. Actuar con cercanía y compromiso.",
+                                                       "alto":  "Liderar con el compromiso de transmitir una imagen positiva de la Junta de Andalucía y su organización cuando se relaciona con personas externas. Promover una cultura de responsabilidad y orientación al servicio público en su equipo."
+                                                   }
+                  },
+                  {
+                      "id":  "co5",
+                      "index":  5,
+                      "title":  "Asumir responsabilidades e iniciativas para alcanzar los objetivos de la organización",
+                      "description":  "Implica liderar el compromiso con la excelencia en la organización, marcando estándares de calidad, definiendo objetivos claros y asegurando su cumplimiento. Actuar con iniciativa fomentando una cultura de mejora continua en los equipos.",
+                      "evidencias":  "E n c u e s t a s d e s a t i s f a c c i ó n H o j a s d e r e c l a m a c i o n e s. R e u n i o n e s d e t r a b a j o. D e n u n c i a s. C o n s u l t a s. A t e n c i ó n p r e s e n c i a l o t e l e f ó n i c a. P r e m i o s.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co5_a1",
+                                            "text":  "Coordinar al equipo con iniciativa para lograr resultados de calidad en tiempo y forma."
+                                        },
+                                        {
+                                            "id":  "co5_a2",
+                                            "text":  "Promover una cultura de evaluación y mejora continuas."
+                                        },
+                                        {
+                                            "id":  "co5_a3",
+                                            "text":  "Establecer responsabilidades y criterios claros de calidad para el trabajo de personas y equipo, asegurándose de que se cumplan."
+                                        },
+                                        {
+                                            "id":  "co5_a4",
+                                            "text":  "Proponer mejoras, anticiparse a los problemas si es posible y contribuir al buen funcionamiento del equipo."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "Realizar sus tareas de forma descuidada o incompleta. No asumir la responsabilidad de su trabajo ni tener iniciativas para alcanzar los objetivos.",
+                                                       "basico":  "Cumplir con sus funciones, aunque puede cometer errores por falta de atención o planificación. Impulsar pocas iniciativas para alcanzar los objetivos de la organización.",
+                                                       "medio":  "Realizar su trabajo con cuidado, dentro de los plazos establecidos y con un nivel de calidad adecuado, asumiendo responsabilidades e iniciativas para alcanzar los objetivos de la organización.",
+                                                       "alto":  "Coordinar el trabajo del equipo con alto nivel de responsabilidad, compromiso con el logro de los objetivos y calidad. Anticiparse a los problemas, cuidar los detalles y contribuir al buen funcionamiento del equipo."
+                                                   }
+                  }
+              ]
+}

@@ -1,0 +1,263 @@
+{
+    "rubric_competency":  "Mapa de Competencias · Junta de Andalucía",
+    "rubric_title":  "Aprendizaje permanente",
+    "rubric_rol":  "Rol técnico",
+    "rubric_definition":  "Realizar actividades que permitan la actualización continua de los conocimientos y competencias profesionales, así como su aplicación al trabajo para optimizar el desempeño laboral.",
+    "rubric_instructions":  "Valora en qué grado realizas cada una de las actuaciones de los 5 comportamientos observables.",
+    "rubric_puntuation":  "Grado 1: nunca o rara vez · Grado 2: alguna vez · Grado 3: habitualmente · Grado 4: siempre o casi siempre.",
+    "language":  "es-ES",
+    "version":  "2026-07-06",
+    "scale":  {
+                  "name":  "Grados",
+                  "levels":  [
+                                 {
+                                     "value":  1,
+                                     "label":  "Grado 1",
+                                     "description":  "Nunca, rara vez. (Sin competencia) / No aplicable a mi puesto."
+                                 },
+                                 {
+                                     "value":  2,
+                                     "label":  "Grado 2",
+                                     "description":  "Alguna vez, ocasionalmente. (Nivel básico)"
+                                 },
+                                 {
+                                     "value":  3,
+                                     "label":  "Grado 3",
+                                     "description":  "Habitualmente, con frecuencia. (Nivel medio)"
+                                 },
+                                 {
+                                     "value":  4,
+                                     "label":  "Grado 4",
+                                     "description":  "Siempre, casi siempre. (Nivel alto)"
+                                 }
+                             ]
+              },
+    "scoring":  {
+                    "points_per_level":  {
+                                             "1":  1,
+                                             "2":  2,
+                                             "3":  3,
+                                             "4":  4
+                                         },
+                    "max_points_per_behavior":  4,
+                    "max_points_per_area":  16,
+                    "accredited_min_grade":  3,
+                    "global_model":  {
+                                         "model":  "quality_coverage",
+                                         "max_raw":  80,
+                                         "total_behaviors":  20,
+                                         "formula":  "100 * (raw/max_raw) * (0.5 + 0.5 * coverage)"
+                                     },
+                    "classification_rules":  {
+                                                 "area":  [
+                                                              {
+                                                                  "min":  0,
+                                                                  "max":  6,
+                                                                  "label":  "Sin competencia",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  7,
+                                                                  "max":  9,
+                                                                  "label":  "Nivel básico",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  10,
+                                                                  "max":  12,
+                                                                  "label":  "Nivel medio",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  13,
+                                                                  "max":  16,
+                                                                  "label":  "Nivel alto",
+                                                                  "description":  ""
+                                                              }
+                                                          ],
+                                                 "global":  [
+                                                                {
+                                                                    "min":  0,
+                                                                    "max":  49,
+                                                                    "label":  "Sin competencia",
+                                                                    "description":  "No mostrar interés por actualizar sus conocimientos técnicos ni por mejorar su desempeño. Resistirse al cambio, no identificar áreas de mejora ni participar en formaciones, lo que limita su capacidad para adaptarse a nuevas demandas profesionales o normativas."
+                                                                },
+                                                                {
+                                                                    "min":  50,
+                                                                    "max":  69,
+                                                                    "label":  "Nivel básico",
+                                                                    "description":  "Participar en formaciones cuando se le indica, aunque con baja implicación. Identificar algunas necesidades de aprendizaje, pero no actuar con constancia. Aplicar lo aprendido de forma limitada y necesitar apoyo para integrar nuevas herramientas o enfoques en su trabajo técnico."
+                                                                },
+                                                                {
+                                                                    "min":  70,
+                                                                    "max":  89,
+                                                                    "label":  "Nivel medio",
+                                                                    "description":  "Mostrar interés por el aprendizaje y el autoaprendizaje. Participar activamente en la formación, identificar con claridad sus necesidades de mejora y aplicar buena parte de lo aprendido en su ámbito técnico. Adaptarse a nuevas normativas, herramientas o metodologías con actitud positiva."
+                                                                },
+                                                                {
+                                                                    "min":  90,
+                                                                    "max":  100,
+                                                                    "label":  "Nivel alto",
+                                                                    "description":  "Tener una actitud proactiva hacia su desarrollo profesional. Buscar formación especializada por iniciativa propia, integrar nuevas herramientas y conocimientos en su práctica técnica y proponer mejoras. Compartir aprendizajes con el equipo y contribuir activamente a una cultura de innovación y mejora continua en su área de conocimiento."
+                                                                }
+                                                            ]
+                                             }
+                },
+    "areas":  [
+                  {
+                      "id":  "co1",
+                      "index":  1,
+                      "title":  "Detectar las necesidades de formación que se tienen en el trabajo y buscar cómo cubrirlas",
+                      "description":  "Capacidad para detectar de forma proactiva carencias formativas y necesidades de aprendizaje en relación con el puesto y el entorno laboral, y buscar los medios adecuados para cubrirlas.",
+                      "evidencias":  "P l a n i n d i v i d u a l d e d e s a r r o l l o. S o l i c i t u d e s d e f o r m a c i ó n. I n f o r m e s d e d e t e c c i ó n d e n e c e s i d a d e s. P a r t i c i p a c i ó n e n e n t r e v i s t a s d e d e s a r r o l l o. P r o p u e s t a s f o r m a t i v a s r e a l i z a d a s. C u e s t i o n a r i o d e n e c e s i d a d e s f o r m a t i v a s. P a r t i c i p a c i ó n e n @n f o r a",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co1_a1",
+                                            "text":  "Registrar necesidades de aprendizaje vinculadas a las funciones que desempeña o a los proyectos en los que participa, justificando su relación con el puesto."
+                                        },
+                                        {
+                                            "id":  "co1_a2",
+                                            "text":  "Analizar los cambios normativos, tecnológicos o metodológicos de su ámbito e identificar sus necesidades de actualización profesional."
+                                        },
+                                        {
+                                            "id":  "co1_a3",
+                                            "text":  "Participar en procesos de evaluación o autoevaluación de necesidades formativas propias y del equipo, e identificar acciones concretas para mejorar su desempeño."
+                                        },
+                                        {
+                                            "id":  "co1_a4",
+                                            "text":  "Trasladar, a su responsable o a las unidades competentes, mediante entrevista, reunión, cuestionario, etc., propuestas concretas de formación o desarrollo profesional vinculadas a su puesto y a su equipo."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "No analizar su desempeño profesional ni identificar los conocimientos que requiere actualizar.",
+                                                       "basico":  "Detectar algunas necesidades de aprendizaje, pero de forma superficial o sin enfoque estratégico. Necesitar apoyo para concretarlas.",
+                                                       "medio":  "Analizar de forma regular sus necesidades formativas y vincularlas con su área técnica. Proponer temas o competencias a desarrollar.",
+                                                       "alto":  "Identificar proactivamente necesidades de formación propias y del entorno técnico. Participar en su diagnóstico y trasladar propuestas concretas de formación o desarrollo profesional vinculadas a su puesto y a su equipo."
+                                                   }
+                  },
+                  {
+                      "id":  "co2",
+                      "index":  2,
+                      "title":  "Realizar acciones de formación y aprendizaje por iniciativa propia o que le oferta la organización",
+                      "description":  "Implica involucrarse activamente en el propio aprendizaje relevante para su desarrollo, a través de la participación en acciones de formación técnica, en jornadas profesionales o con el autoaprendizaje.",
+                      "evidencias":  "C e r t i f i c a d o s d e a s i s t e n c i a o a p r o v e c h a m i e n t o. H i s t o r i a l d e f o r m a c i ó n. P a r t i c i p a c i ó n e n j o r n a d a s. E n c u e s t a s d e e v a l u a c i ó n. P r e s e n t a c i o n e s o m a t e r i a l e s e l a b o r a d o s. P a r t i c i p a c i ó n e n a l g u n a r e d p r o f e s i o n a l. L e c t u r a s t é c n i c a s",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co2_a1",
+                                            "text":  "Participar anualmente en actividades de formación, aprendizaje y desarrollo profesional relacionadas con sus funciones y a propuesta de la organización."
+                                        },
+                                        {
+                                            "id":  "co2_a2",
+                                            "text":  "Participar anualmente en actividades de formación, aprendizaje y desarrollo profesional relacionadas con sus funciones por iniciativa propia mediante autoaprendizaje."
+                                        },
+                                        {
+                                            "id":  "co2_a3",
+                                            "text":  "Planificar su participación en las diferentes actividades formativas de la organización."
+                                        },
+                                        {
+                                            "id":  "co2_a4",
+                                            "text":  "Participar y aprender en espacios informales de intercambio profesional y aprendizaje (redes profesionales, foros, lecturas,etc.)."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "No participar en acciones de formación ni mantenerse actualizados sus conocimientos.",
+                                                       "basico":  "Asistir a formaciones, pero con implicación limitada. Participación pasiva o centrada solo en cumplir.",
+                                                       "medio":  "Participar activamente en formaciones técnicas relevantes. Intervenir, preguntar y aplicar los conocimientos adquiridos.",
+                                                       "alto":  "Asumir un rol activo en su desarrollo mediante el autoaprendizaje o por lo ofertado por la organización. Seleccionar formaciones estratégicas, colaborar en sesiones formativas y compartir lo aprendido con su entorno profesional."
+                                                   }
+                  },
+                  {
+                      "id":  "co3",
+                      "index":  3,
+                      "title":  "Compartir con compañeros y compañeras los aprendizajes adquiridos",
+                      "description":  "Se refiere a la necesidad e importancia de compartir con todos los miembros del equipo los aprendizajes adquiridos mediante formación formal,no formal e informal.",
+                      "evidencias":  "P a r t i c i p a c i ó n e n g r u p o s d e t r a b a j o. P r e s e n t a c i o n e s r e a l i z a d a s a l e q u i p o. P r o p u e s t a s d e m e j o r a. R e u n i o n e s p e r i ó d i c a s d e l e q u i p o c o n f i n a l i d a d f o r m a t i v a.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co3_a1",
+                                            "text":  "Compartir conocimientos, recursos o buenas prácticas con otras personas de su equipo o unidad de manera formal, mediante reuniones periódicas, programas y proyectos."
+                                        },
+                                        {
+                                            "id":  "co3_a2",
+                                            "text":  "Compartir conocimientos, recursos o buenas prácticas con otras personas de su equipo o unidad de manera informal."
+                                        },
+                                        {
+                                            "id":  "co3_a3",
+                                            "text":  "Introducir cambios en procedimientos o tareas derivados de aprendizajes recientes, y compartirlos con compañeros y compañeras para motivarlos con el aprendizaje permanente."
+                                        },
+                                        {
+                                            "id":  "co3_a4",
+                                            "text":  "Solicitar al equipo sugerencias e incorporarlas con el objeto de mejorar el desempeño personal y colectivo."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "No mostrar inquietud por su actualización profesional. No compartir aprendizajes adquiridos.",
+                                                       "basico":  "Tener interés por mejorar y compartir aprendizajes, pero dependiendo de que otras personas propongan o le faciliten las oportunidades.",
+                                                       "medio":  "Crear situaciones y espacios para compartir aprendizajes adquiridos con el equipo.",
+                                                       "alto":  "Motivar hacia el aprendizaje permanente. Solicitar al equipo sugerencias e incorporarlas con el objeto de mejorar el desempeño personal y colectivo."
+                                                   }
+                  },
+                  {
+                      "id":  "co4",
+                      "index":  4,
+                      "title":  "Participar en experiencias de aprendizaje colaborativo e innovación",
+                      "description":  "Capacidad para involucrarse en iniciativas que le permitan seguir aprendiendo y mejorando en su desempeño profesional. Participar en proyectos retadores con todo el equipo y buscar oportunidades de aprendizaje continuo mediante la colaboración y la innovación.",
+                      "evidencias":  "P a r t i c i p a c i ó n e n g r u p o s d e t r a b a j o. P a r t i c i p a c i ó n e n C o m u n i d a d e s d e p r á c t i c a. P r o p u e s t a s d e m e j o r a. P a r t i c i p a c i ó n e n p l a n e s y p r o y e c t o s. P u b l i c a c i o n e s. M e n t o r í a P a r t i c i p a c i ó n e n r e d p r o f e s i o n a l u o t r a s s i m i l a r e s P a r t i c i p a c i ó n e n p i l o t o s o g r u p o s d e i n n o v a c i ó n.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co4_a1",
+                                            "text":  "Impulsar o participar en iniciativas orientadas al intercambio de conocimiento y en planes y proyectos que amplían su experiencia profesional."
+                                        },
+                                        {
+                                            "id":  "co4_a2",
+                                            "text":  "Colaborar voluntariamente en proyectos piloto o iniciativas de innovación."
+                                        },
+                                        {
+                                            "id":  "co4_a3",
+                                            "text":  "Participar en redes profesionales, comunidades de práctica, foros especializados u otros grupos de trabajo colaborativo de la organización donde se comparten conocimientos, aprendizajes y experiencias."
+                                        },
+                                        {
+                                            "id":  "co4_a4",
+                                            "text":  "Impulsar y motivar en el equipo experiencias de aprendizaje colaborativo e innovación."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "No participar en experiencias de aprendizaje colaborativo e innovación. Seguir utilizando métodos obsoletos o poco eficaces.",
+                                                       "basico":  "Conocer experiencias de aprendizaje colaborativo e innovación pero no participar activamente en ellas.",
+                                                       "medio":  "Participar en experiencias de aprendizaje colaborativo e innovación. Mejorar sus resultados gracias a la integración de nuevas metodologías o herramientas.",
+                                                       "alto":  "Participar en experiencias de aprendizaje colaborativo e innovación. Impulsar y motivar en el equipo experiencias de aprendizaje colaborativo e innovaciòn."
+                                                   }
+                  },
+                  {
+                      "id":  "co5",
+                      "index":  5,
+                      "title":  "Aplicar en el trabajo los aprendizajes adquiridos",
+                      "description":  "Se centra en trasladar los conocimientos y habilidades adquiridos en procesos formativos al entorno laboral. Supone mejorar prácticas, aportar soluciones y contribuir con ideas nuevas derivadas del aprendizaje.",
+                      "evidencias":  "P r o c e d i m i e n t o s m o d i f i c a d o s. U s o d e n u e v a s a p l i c a c i o n e s c o r p o r a t i v a s. P r o d u c t o s e l a b o r a d o s. C u a d r o s d e m a n d o. H e r r a m i e n t a s i m p l a n t a d a s. M e j o r a s a c r e d i t a d a s.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co5_a1",
+                                            "text":  "Transferir de manera consciente mediante un plan de acción los conocimientos o habilidades adquiridos mediante formación o experiencia."
+                                        },
+                                        {
+                                            "id":  "co5_a2",
+                                            "text":  "Utilizar nuevos procedimientos, metodologías o herramientas, modificar prácticas de trabajo y corregir errores a partir de conocimientos o experiencias adquiridas."
+                                        },
+                                        {
+                                            "id":  "co5_a3",
+                                            "text":  "Analizar los resultados obtenidos tras aplicar nuevos conocimientos o habilidades."
+                                        },
+                                        {
+                                            "id":  "co5_a4",
+                                            "text":  "Compartir de alguna manera lo aprendido con el resto de personas del equipo para que también puedan aplicarlo y mejorar su desempeño."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "No aplicar los conocimientos adquiridos. Tras la formación, seguir trabajando como antes sin cambios visibles.",
+                                                       "basico":  "Intentar aplicar lo aprendido, pero de forma incompleta o con dificultades. A veces olvidar o necesitar apoyo para llevarlo a la práctica.",
+                                                       "medio":  "Aplicar los nuevos conocimientos en su trabajo habitual y ajustar su forma de actuar en función de lo aprendido.",
+                                                       "alto":  "Integrar de manera eficaz los aprendizajes. Mejorar su desempeño y el del equipo compartiendo lo aprendido y sirviendo de ejemplo."
+                                                   }
+                  }
+              ]
+}

@@ -1,0 +1,263 @@
+{
+    "rubric_competency":  "Mapa de Competencias · Junta de Andalucía",
+    "rubric_title":  "Cooperación y colaboración",
+    "rubric_rol":  "Rol técnico",
+    "rubric_definition":  "Trabajar de forma abierta y colaborativa, tanto con el grupo de trabajo propio como con otras personas profesionales, proveedoras y/o usuarias, para alcanzar objetivos comunes, generando y manteniendo relaciones de confianza.",
+    "rubric_instructions":  "Valora en qué grado realizas cada una de las actuaciones de los 5 comportamientos observables.",
+    "rubric_puntuation":  "Grado 1: nunca o rara vez · Grado 2: alguna vez · Grado 3: habitualmente · Grado 4: siempre o casi siempre.",
+    "language":  "es-ES",
+    "version":  "2026-07-06",
+    "scale":  {
+                  "name":  "Grados",
+                  "levels":  [
+                                 {
+                                     "value":  1,
+                                     "label":  "Grado 1",
+                                     "description":  "Nunca, rara vez. (Sin competencia) / No aplicable a mi puesto."
+                                 },
+                                 {
+                                     "value":  2,
+                                     "label":  "Grado 2",
+                                     "description":  "Alguna vez, ocasionalmente. (Nivel básico)"
+                                 },
+                                 {
+                                     "value":  3,
+                                     "label":  "Grado 3",
+                                     "description":  "Habitualmente, con frecuencia. (Nivel medio)"
+                                 },
+                                 {
+                                     "value":  4,
+                                     "label":  "Grado 4",
+                                     "description":  "Siempre, casi siempre. (Nivel alto)"
+                                 }
+                             ]
+              },
+    "scoring":  {
+                    "points_per_level":  {
+                                             "1":  1,
+                                             "2":  2,
+                                             "3":  3,
+                                             "4":  4
+                                         },
+                    "max_points_per_behavior":  4,
+                    "max_points_per_area":  16,
+                    "accredited_min_grade":  3,
+                    "global_model":  {
+                                         "model":  "quality_coverage",
+                                         "max_raw":  80,
+                                         "total_behaviors":  20,
+                                         "formula":  "100 * (raw/max_raw) * (0.5 + 0.5 * coverage)"
+                                     },
+                    "classification_rules":  {
+                                                 "area":  [
+                                                              {
+                                                                  "min":  0,
+                                                                  "max":  6,
+                                                                  "label":  "Sin competencia",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  7,
+                                                                  "max":  9,
+                                                                  "label":  "Nivel básico",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  10,
+                                                                  "max":  12,
+                                                                  "label":  "Nivel medio",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  13,
+                                                                  "max":  16,
+                                                                  "label":  "Nivel alto",
+                                                                  "description":  ""
+                                                              }
+                                                          ],
+                                                 "global":  [
+                                                                {
+                                                                    "min":  0,
+                                                                    "max":  49,
+                                                                    "label":  "Sin competencia",
+                                                                    "description":  "Rechazar la cooperación y la colaboración entre persons o equipos, manteniendo estructuras rígidas y aisladas y no facilitando el intercambio de información ni fomentando espacios de trabajo conjunto."
+                                                                },
+                                                                {
+                                                                    "min":  50,
+                                                                    "max":  69,
+                                                                    "label":  "Nivel básico",
+                                                                    "description":  "Aceptar la colaboración solo cuando es requerida por normativas o superiores, pero sin liderar ni facilitar activamente estas iniciativas. Su implicación en la creación de sinergias entre equipos es limitada y meramente formal."
+                                                                },
+                                                                {
+                                                                    "min":  70,
+                                                                    "max":  89,
+                                                                    "label":  "Nivel medio",
+                                                                    "description":  "Promover la cooperación y la colaboración entre personas y equipos, compartir conocimientos, implicarse en reuniones de trabajo, buscar el consenso y promover la colaboración."
+                                                                },
+                                                                {
+                                                                    "min":  90,
+                                                                    "max":  100,
+                                                                    "label":  "Nivel alto",
+                                                                    "description":  "Fomentar activamente la cooperación compartiendo conocimientos, experiencias e ideas. Facilitar el intercambio constructivo de ideas, generar consensos, prevenir conflictos y lograr propuestas consensuadas. Ser un mediador natural. Liderar o impulsar dinámicas colaborativas en el propio equipo y fuera del equipo habitual. Promover entornos técnicos cooperativos y colaborativos."
+                                                                }
+                                                            ]
+                                             }
+                },
+    "areas":  [
+                  {
+                      "id":  "co1",
+                      "index":  1,
+                      "title":  "Compartir conocimientos, experiencias e ideas con las personas con las que trabaja",
+                      "description":  "Consiste en cooperar de forma activa con el equipo y compartir el saber, el saber hacer, experiencias e ideas, promoviendo una red de apoyo profesional basada en la confianza y la reciprocidad.",
+                      "evidencias":  "I n f o r m e s. P r e s e n t a c i o n e s. A c t a s. R e c o n o c i m i e n t o s. T u t o r í a s. A s e s o r a m i e n t o s. R e s o l u c i ó n d e c o n s u l t a s.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co1_a1",
+                                            "text":  "Prestar apoyo o asesoramiento técnico en tareas específicas cuando resulta necesario, aunque no comparta necesariamente la responsabilidad global del proyecto."
+                                        },
+                                        {
+                                            "id":  "co1_a2",
+                                            "text":  "Solicitar ayuda a otras personas del equipo cuando necesita una segunda opinión profesional o cuando requiere cualquier otra tarea o recurso para lograr los objetivos"
+                                        },
+                                        {
+                                            "id":  "co1_a3",
+                                            "text":  "Intercambiar experiencias, conocimientos, herramientas, recursos o referencias útiles con las personas con las que trabaja, para lograr los objetivos del equipo o unidad."
+                                        },
+                                        {
+                                            "id":  "co1_a4",
+                                            "text":  "Apoyar al equipo con sus conocimientos y potenciar el aprendizaje colectivo y el trabajo compartido para alcanzar objetivos comunes."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "No cooperar. Evitar ayudar o compartir conocimiento.",
+                                                       "basico":  "Ofrecer ayuda cuando se la piden, pero de forma puntual o limitada. No compartir sus recursos o aprendizajes.",
+                                                       "medio":  "Intercambiar conocimientos y cooperar activamente con las personas con las que trabaja. Mostrarse disponible y facilitar el trabajo conjunto.",
+                                                       "alto":  "Fomentar activamente la cooperación compartiendo conocimientos, experiencias e ideas. Ser fuente de apoyo en su equipo y potenciar el aprendizaje colectivo y el trabajo compartido para alcanzar objetivos comunes."
+                                                   }
+                  },
+                  {
+                      "id":  "co2",
+                      "index":  2,
+                      "title":  "Implicarse en las reuniones de los grupos de trabajo, preparándolas, exponiendo sus ideas, y respetando las opiniones de las otras personas.",
+                      "description":  "Se refiere a expresar con claridad y respeto las ideas, escuchar activamente, y favorecer el intercambio constructivo de opiniones en el entorno de las reuniones de trabajo, facilitando la toma de decisiones conjuntas.",
+                      "evidencias":  "A c t a s d e r e u n i o n e s. C o n v o c a t o r i a s d e r e u n i o n e s. C o o r d i n a c i ó n d e r e u n i o n e s. P r e s e n t a c i o n e s. I n f o r m e s. P r o c e s o s d e c o n s u l t a.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co2_a1",
+                                            "text":  "Preparar las reuniones con tiempo, con convocatoria con orden del día, y con documentación técnica clara para facilitar su comprensión si es necesaria."
+                                        },
+                                        {
+                                            "id":  "co2_a2",
+                                            "text":  "Exponer sus ideas y facilitar con respeto la intervención de las distintas personas en reuniones y procesos de trabajo compartidos."
+                                        },
+                                        {
+                                            "id":  "co2_a3",
+                                            "text":  "Preguntar y aclarar dudas para evitar malentendidos, recogiendo y considerando las aportaciones de otras personas antes de formular propuestas o decisiones."
+                                        },
+                                        {
+                                            "id":  "co2_a4",
+                                            "text":  "Participar activamente en la elaboración de propuestas o acuerdos consensuados en las reuniones de trabajo, con acta de conclusiones y compromisos."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "En las reuniones comunicarse de forma cerrada, técnica o defensiva. No favorecer el intercambio ni la participación.",
+                                                       "basico":  "En las reuniones transmitir información, pero sin fomentar la interacción. Le cuesta adaptar su lenguaje o escuchar opiniones diferentes.",
+                                                       "medio":  "En las reuniones, que prepara y convoca, expresar con claridad sus ideas y escuchar activamente. Compartir conocimientos y favorecer el entendimiento.",
+                                                       "alto":  "En las reuniones ser un referente en la comunicación técnica y colaborativa. Facilitar el intercambio constructivo de ideas, generar consensos, prevenir conflictos y lograr propuestas consensuadas que son recogidas en un ata de conclusiones y compromisos."
+                                                   }
+                  },
+                  {
+                      "id":  "co3",
+                      "index":  3,
+                      "title":  "Buscar el consenso y el acuerdo dentro de los grupos de trabajo",
+                      "description":  "Implica saber manejar desacuerdos o tensiones dentro del equipo o grupos de trabajo, buscando soluciones comunes y manteniendo una actitud constructiva.",
+                      "evidencias":  "V e r s i o n e s r e v i s a d a s. M e j o r a s i m p l a n t a d a s. I n f o r m e s d e s e g u i m i e n t o. A c t a s. I n f o r m e s c o m p a r a t i v o s. P r o p u e s t a s c o n s e n s u a d a s.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co3_a1",
+                                            "text":  "Escuchar activamente en situaciones de tensión sin interrumpir, evitando posiciones defensivas y valorando todos los argumentos."
+                                        },
+                                        {
+                                            "id":  "co3_a2",
+                                            "text":  "Demostrar interés por las personas, mostrándose accesible y construyendo relaciones interpersonales sólidas."
+                                        },
+                                        {
+                                            "id":  "co3_a3",
+                                            "text":  "Participar en la búsqueda de soluciones compartidas intermedias ante discrepancias técnicas u organizativas, o cuando hay puntos de vista opuestos."
+                                        },
+                                        {
+                                            "id":  "co3_a4",
+                                            "text":  "Mediar de manera natural en el equipo, abordando los conflictos de manera proactiva, con criterio técnico y sentido humano, y ayudando a evitar futuras tensiones."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "Evitar o negar los conflictos, generando bloqueos en el equipo técnico. Adoptar una actitud defensiva o rígida.",
+                                                       "basico":  "Reconocer los conflictos, pero costar abordarlos. Necesitar ayuda externa para gestionarlos con eficacia.",
+                                                       "medio":  "Enfrentar los conflictos con serenidad. Escuchar, argumentar y buscar soluciones técnicas o de proceso adecuadas, buscando el consenso y el acuerdo.",
+                                                       "alto":  "Ser un mediador natural en el equipo. Abordar los conflictos de manera proactiva, con criterio técnico y sentido humano, ayudando a evitar futuras tensiones."
+                                                   }
+                  },
+                  {
+                      "id":  "co4",
+                      "index":  4,
+                      "title":  "Fomentar la colaboración dentro del propio equipo y con el resto de las personas de la unidad y la organización",
+                      "description":  "Se refiere a coordinar su trabajo técnico con los objetivos del grupo, comprometiéndose con los resultados globales y actuando colaborativamente de forma alineada con las metas compartidas.",
+                      "evidencias":  "I n f o r m e s. P r e s e n t a c i o n e s. A c t a s. E v a l u a c i o n e s c o n j u n t a s. T u t o r í a s. A s e s o r a m i e n t o s. R e s o l u c i ó n d e c o n s u l t a s.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co4_a1",
+                                            "text":  "Compartir objetivos, responsabilidades y propiedad del trabajo con el resto del equipo, con implicación, sentido de pertenencia, propósito común y responsabilidad compartida."
+                                        },
+                                        {
+                                            "id":  "co4_a2",
+                                            "text":  "Promover espacios y tiempo de encuentro para lograr una comunicación con todas las personas del equipo constante y fluida, favoreciendo la creatividad y la resolución de problemas en equipo."
+                                        },
+                                        {
+                                            "id":  "co4_a3",
+                                            "text":  "Impulsar en el equipo el trabajo de manera colaborativa, con toma de decisiones conjunta en la que cada persona tiene voz y voto, y donde las responsabilidades se comparten, se intercambian y se adaptan según las necesidades."
+                                        },
+                                        {
+                                            "id":  "co4_a4",
+                                            "text":  "Informar al equipo sobre avances o incidencias relevantes, y promover evaluaciones conjuntas de resultados que sirvan para reconocer y visibilizar los esfuerzos conjuntos."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "No colaborar con las personas de la unidad ni participar en espacios colectivos. Actuar de forma aislada.",
+                                                       "basico":  "Colaborar cuando se le solicita, pero no suele tomar la iniciativa. Le cuesta adaptarse a los estilos de trabajo del equipo.",
+                                                       "medio":  "Participar activamente en dinámicas colaborativas con el equipo. Compartir conocimientos y coordinarse eficazmente con las otras personas del equipo.",
+                                                       "alto":  "Liderar o impulsar dinámicas colaborativas en el propio equipo. Favorecer la cohesión del equipo y promover entornos técnicos colaborativos donde se vive el sentido de pertenencia y la responsabilidad compartida. Informar sobre avances o incidencias y promover evaluaciones conjuntas."
+                                                   }
+                  },
+                  {
+                      "id":  "co5",
+                      "index":  5,
+                      "title":  "Construir y mantener una red de colegas y contactos para lograr avances en los objetivos e intereses compartidos",
+                      "description":  "Implica trabajar de forma coordinada y en red con otras personas, compartiendo responsabilidades y promoviendo relaciones laborales basadas en el logro de objetivos comunes.",
+                      "evidencias":  "P a r t i c i p a c i ó n e n g r u p o s d e t r a b a j o. P r o y e c t o s c o m p a r t i d o s. A c t a s d e r e u n i o n e s. I n f o r m e s e l a b o r a d o s c o n j u n t a m e n t e. R e d e s d e c o l a b o r a c i ó n. R e u n i o n e s p e r i ó d i c a s. E q u i p o s m u l t i d i s c i p l i n a r e s. C o m u n i d a d e s d e p r á c t i c a. P a r t i c i p a c i ó n e n p r o y e c t o s t r a n s v e r s a l e s. A d a p t a c i ó n d e c a l e n d a r i o s. P r o c e d i m i e n t o s c o m p a r t i d o s. V e r s i o n e s c o l a b o r a t i v a s d e d o c u m e n t o s. I n f o r m e s c o n c o n t r i b u c i o n e s c o n j u n t a s.  P a r t i c i p a c i ó n e n a c t i v i d a d e s d e m e j o r a. E n c u e s t a s d e c l i m a. G r u p o s d e m e j o r a.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co5_a1",
+                                            "text":  "Participar en actuaciones o proyectos desarrollados conjuntamente con otras personas o unidades organizativas, ajustando su forma de trabajo para facilitar la coordinación, y de quienes puede llegar a incorporar aportaciones o propuestas."
+                                        },
+                                        {
+                                            "id":  "co5_a2",
+                                            "text":  "Mantener canales habituales de coordinación e intercambio de información con otras personas o equipos."
+                                        },
+                                        {
+                                            "id":  "co5_a3",
+                                            "text":  "Contar con una agenda viva de contactos profesionales con los que se relaciona por objetivos e intereses compartidos."
+                                        },
+                                        {
+                                            "id":  "co5_a4",
+                                            "text":  "Liderar o impulsar dinámicas colaborativas externas al equipo, promoviendo entornos técnicos cooperativos y colaborativos para lograr avances en los objetivos e intereses compartidos."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "No cooperar con otros y otras profesionales ni participar en espacios colectivos. Actuar de forma aislada.",
+                                                       "basico":  "Colaborar cuando se le solicita, pero no mantener una red de colegas y contactos.",
+                                                       "medio":  "Construir y mantener una red de colegas y contactos para avanzar en objetivos e intereses compartidos. Coordinarse eficazmente.",
+                                                       "alto":  "Liderar o impulsar dinámicas colaborativas con personas fuera del equipo habitual. Promover entornos técnicos cooperativos y colaborativos."
+                                                   }
+                  }
+              ]
+}

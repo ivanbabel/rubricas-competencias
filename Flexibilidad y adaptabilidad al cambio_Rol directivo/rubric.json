@@ -1,0 +1,263 @@
+{
+    "rubric_competency":  "Mapa de Competencias · Junta de Andalucía",
+    "rubric_title":  "Flexibilidad y adaptabilidad al cambio",
+    "rubric_rol":  "Rol directivo",
+    "rubric_definition":  "Modificar el comportamiento para dar respuesta a necesidades cambiantes, reajustando las prioridades, adoptando nuevos enfoques y maneras de actuar en función de las nuevas demandas, de forma que se mantengan o mejoren los niveles de efectividad en distintos entornos, con personas diferentes, con tareas distintas y ante problemas diversos.",
+    "rubric_instructions":  "Valora en qué grado realizas cada una de las actuaciones de los 5 comportamientos observables.",
+    "rubric_puntuation":  "Grado 1: nunca o rara vez · Grado 2: alguna vez · Grado 3: habitualmente · Grado 4: siempre o casi siempre.",
+    "language":  "es-ES",
+    "version":  "2026-07-06",
+    "scale":  {
+                  "name":  "Grados",
+                  "levels":  [
+                                 {
+                                     "value":  1,
+                                     "label":  "Grado 1",
+                                     "description":  "Nunca, rara vez. (Sin competencia) / No aplicable a mi puesto."
+                                 },
+                                 {
+                                     "value":  2,
+                                     "label":  "Grado 2",
+                                     "description":  "Alguna vez, ocasionalmente. (Nivel básico)"
+                                 },
+                                 {
+                                     "value":  3,
+                                     "label":  "Grado 3",
+                                     "description":  "Habitualmente, con frecuencia. (Nivel medio)"
+                                 },
+                                 {
+                                     "value":  4,
+                                     "label":  "Grado 4",
+                                     "description":  "Siempre, casi siempre. (Nivel alto)"
+                                 }
+                             ]
+              },
+    "scoring":  {
+                    "points_per_level":  {
+                                             "1":  1,
+                                             "2":  2,
+                                             "3":  3,
+                                             "4":  4
+                                         },
+                    "max_points_per_behavior":  4,
+                    "max_points_per_area":  16,
+                    "accredited_min_grade":  3,
+                    "global_model":  {
+                                         "model":  "quality_coverage",
+                                         "max_raw":  80,
+                                         "total_behaviors":  20,
+                                         "formula":  "100 * (raw/max_raw) * (0.5 + 0.5 * coverage)"
+                                     },
+                    "classification_rules":  {
+                                                 "area":  [
+                                                              {
+                                                                  "min":  0,
+                                                                  "max":  6,
+                                                                  "label":  "Sin competencia",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  7,
+                                                                  "max":  9,
+                                                                  "label":  "Nivel básico",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  10,
+                                                                  "max":  12,
+                                                                  "label":  "Nivel medio",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  13,
+                                                                  "max":  16,
+                                                                  "label":  "Nivel alto",
+                                                                  "description":  ""
+                                                              }
+                                                          ],
+                                                 "global":  [
+                                                                {
+                                                                    "min":  0,
+                                                                    "max":  49,
+                                                                    "label":  "Sin competencia",
+                                                                    "description":  "Rechazar cambios organizativos o estratégicos, bloqueando iniciativas de mejora. Insistir en mantener estructuras y procesos obsoletos, mostrando resistencia activa al cambio. Dificultar la adaptación del equipo y frena la transformación de la organización."
+                                                                },
+                                                                {
+                                                                    "min":  50,
+                                                                    "max":  69,
+                                                                    "label":  "Nivel básico",
+                                                                    "description":  "Aceptar los cambios solo cuando son impuestos por normativas o decisiones superiores. Tener dificultades para liderar en contextos de incertidumbre y cambios estratégicos y gestionar los cambios de forma reactiva, sin impulsar de manera proactiva procesos de mejora o innovación."
+                                                                },
+                                                                {
+                                                                    "min":  70,
+                                                                    "max":  89,
+                                                                    "label":  "Nivel medio",
+                                                                    "description":  "Adaptarse con agilidad y flexibilidad a cambios organizativos y promover la aplicación de nuevas estrategias. Colaborar con otros líderes para facilitar la transición en su área de responsabilidad. Motivar a su equipo a adoptar nuevas metodologías, siendo un referente de adaptación positiva al cambio."
+                                                                },
+                                                                {
+                                                                    "min":  90,
+                                                                    "max":  100,
+                                                                    "label":  "Nivel alto",
+                                                                    "description":  "Anticipar los cambios del entorno organizativo, económico o social, y liderar con visión estratégica. Diseñar e impulsar planes de transformación organizacional, fomentando una cultura de innovación y mejora continua. Motivar y preparar a los equipos para afrontar cambios complejos, gestionando resistencias de forma efectiva y promoviendo adaptabilidad y flexibilidad al cambio en entornos colaborativos."
+                                                                }
+                                                            ]
+                                             }
+                },
+    "areas":  [
+                  {
+                      "id":  "co1",
+                      "index":  1,
+                      "title":  "Promover cambios en los métodos, procesos y sistemas de trabajo para adaptarlos a las prioridades de la organización y del entorno",
+                      "description":  "Conoce y comprende las prioridades de la organización y del entorno, las asume con visión transformadora, y promueve los cambios en métodos, procesos y sistemas para adaptarlos.",
+                      "evidencias":  "R e u n i o n e s d e t r a b a j o. E n f o q u e m e t o d o l ó g i c o. S i s t e m a s d e t r a b a j o. E s t u d i o d e p r o c e s o s. V i s i ó n, m i s i ó n y v a l o r e s.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co1_a1",
+                                            "text":  "Conocer y comprender las prioridades de la organización y del entorno."
+                                        },
+                                        {
+                                            "id":  "co1_a2",
+                                            "text":  "Aceptar con naturalidad transformaciones organizativas o estratégicas."
+                                        },
+                                        {
+                                            "id":  "co1_a3",
+                                            "text":  "Reformular su enfoque metodológico, procesos o sistema de trabajo sin mostrar resistencia."
+                                        },
+                                        {
+                                            "id":  "co1_a4",
+                                            "text":  "Liderar con el equipo el cambio en métodos, procesos y sistemas de trabajo para adaptarlos a las nuevas prioridades de la organización y del entorno"
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "Mostrarse cerrado ante los cambios en métodos, procesos y sistemas. Ignorar las prioridades de la organización y del entorno.",
+                                                       "basico":  "Aceptar los cambios, pero le cuesta interiorizarlos o explicarlos con convicción. Actitud ambivalente.",
+                                                       "medio":  "Aceptar los cambios y promoverlos con actitud constructiva y sin ofrecer resistencia. Aplicarlos y comunicarlos adecuadamente dentro del equipo.",
+                                                       "alto":  "Conocer las prioridades de la organización y del entorno. Actuar con apertura, visión transformadora y coherencia institucional al promover los cambios necesarios en métodos, procesos y sistemas para adaptarlos a las prioridades."
+                                                   }
+                  },
+                  {
+                      "id":  "co2",
+                      "index":  2,
+                      "title":  "Impulsar y liderar los cambios como elemento de evolución de la organización",
+                      "description":  "Se anticipa a los cambios, los impulsa y lidera como elementos necesarios para la evolución de la organización. Detecta oportunidades de mejora ante entornos variables.",
+                      "evidencias":  "R e u n i o n e s d e t r a b a j o. E n f o q u e m e t o d o l ó g i c o. S i s t e m a s d e t r a b a j o. E s t u d i o d e p r o c e s o s. V i s i ó n, m i s i ó n y v a l o r e s. A c c i o n e s f o r m a t i v a s.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co2_a1",
+                                            "text":  "Detectar cambios internos o del entorno y proponer acciones para adaptarse a ellos."
+                                        },
+                                        {
+                                            "id":  "co2_a2",
+                                            "text":  "Aportar ideas y alternativas para mejorar el trabajo incluso cuando la situación es incierta o cambiante."
+                                        },
+                                        {
+                                            "id":  "co2_a3",
+                                            "text":  "Introducir buenas prácticas aprendidas de otras organizaciones o entornos para mejorar la organización."
+                                        },
+                                        {
+                                            "id":  "co2_a4",
+                                            "text":  "Liderar el aprendizaje permanente en su equipo para estar mejor preparado para los cambios en la organización."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "No impulsar ni liderar cambios en la organización. Ser inmovilista.",
+                                                       "basico":  "Ser lento para anticiparse o planificar con visión los cambios en la organización. Aporta algunas ideas a veces.",
+                                                       "medio":  "Aportar ideas y alternativas para mejorar el trabajo incluso cuando la situación es incierta o cambiante.",
+                                                       "alto":  "Detectar tendencias, proponer soluciones y formar al equipo para el cambio. Liderar el aprendizaje permanente en la organización."
+                                                   }
+                  },
+                  {
+                      "id":  "co3",
+                      "index":  3,
+                      "title":  "Prever y afrontar las resistencias de las personas implicadas en los cambios antes de impulsarlos",
+                      "description":  "Actúa con estabilidad emocional y autocontrol ante entornos inciertos. Sabe manejar la presión y el impacto del cambio sobre el equipo, dedicando tiempo a transmitir confianza y equilibrio y superar resistencias.",
+                      "evidencias":  "R e u n i o n e s d e t r a b a j o. E n f o q u e m e t o d o l ó g i c o. S i s t e m a s d e t r a b a j o. E s t u d i o d e p r o c e s o s. V i s i ó n, m i s i ó n y v a l o r e s.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co3_a1",
+                                            "text":  "Trasmitir los cambios al equipo con un lenguaje claro y adecuado para reforzar la seguridad y reducir sus resistencias."
+                                        },
+                                        {
+                                            "id":  "co3_a2",
+                                            "text":  "Escuchar con empatía las opiniones, preocupaciones y miedos del personal frente al cambio."
+                                        },
+                                        {
+                                            "id":  "co3_a3",
+                                            "text":  "Fomentar en el equipo el pensamiento positivo frente al cambio"
+                                        },
+                                        {
+                                            "id":  "co3_a4",
+                                            "text":  "Liderar el bienestar emocional del equipo durante procesos de cambio, dedicando tiempo a reforzar con serenidad la cohesión y estabilidad colectiva."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "Ignorar las resistencias de las personas implicadas en los cambios.",
+                                                       "basico":  "Saber de las resistencias de las personas implicadas en los cambios pero hacer poco por afrontarlas.",
+                                                       "medio":  "Actuar con serenidad ante escenarios difíciles y contener al equipo, escuchando con empatía las opiniones, preocupaciones y miedos del personal frente al cambio.",
+                                                       "alto":  "Fomentar el pensamiento positivo y acompañar en la gestión de las emociones de las personas del equipo en procesos de cambio. Ser pilar emocional en el equipo. Reforzar la cohesión y estabilidad colectiva en momentos de cambio."
+                                                   }
+                  },
+                  {
+                      "id":  "co4",
+                      "index":  4,
+                      "title":  "Crear planes efectivos para gestionar el cambio y responder rápidamente a situaciones críticas",
+                      "description":  "Ajusta sus decisiones, prioridades y recursos de forma ágil y eficaz ante contextos inciertos, crisis organizativas o demandas imprevistas. Muestra flexibilidad estratégica.",
+                      "evidencias":  "R e u n i o n e s d e t r a b a j o. E n f o q u e m e t o d o l ó g i c o. S i s t e m a s d e t r a b a j o. E s t u d i o d e p r o c e s o s. V i s i ó n, m i s i ó n y v a l o r e s.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co4_a1",
+                                            "text":  "Analizar las ventajas e inconvenientes de los cambios para asumir los riesgos de su implantación."
+                                        },
+                                        {
+                                            "id":  "co4_a2",
+                                            "text":  "Reestructurar tareas o equipos ante escenarios imprevistos, ajustando con agilidad los recursos y prioridades de su área para mantener la eficacia de la organización."
+                                        },
+                                        {
+                                            "id":  "co4_a3",
+                                            "text":  "Actuar con claridad y rapidez ante urgencias organizativas y situaciones críticas que requieren cambios."
+                                        },
+                                        {
+                                            "id":  "co4_a4",
+                                            "text":  "Planificar con efectividad cómo actuar en una situación crítica, estableciendo qué hacer y cómo medirlo."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "Bloquearse ante imprevistos o gestionar mal las prioridades. Transmitir desorden o indecisión.",
+                                                       "basico":  "Adaptarse si recibe instrucciones, pero con dificultades para reorganizar tareas o liderar en la incertidumbre.",
+                                                       "medio":  "Ajustar prioridades y recursos con agilidad ante entornos complejos. Mantener la eficacia organizativa.",
+                                                       "alto":  "Planificar con efectividad cómo actuar en una situación crítica, estableciendo qué hacer y cómo medirlo. Actuar con claridad y rapidez ante urgencias organizativas."
+                                                   }
+                  },
+                  {
+                      "id":  "co5",
+                      "index":  5,
+                      "title":  "Ayudar a sus personas colaboradoras y colegas a comprender la importancia y beneficios de los cambios",
+                      "description":  "Lidera y acompaña a personas y colegas en situaciones de cambio. Motiva, guía, comunica con claridad e inspira confianza para facilitar la adaptación. Apoya a las personas que tienen más dificultad para adaptarse.",
+                      "evidencias":  "R e u n i o n e s d e t r a b a j o. E n f o q u e m e t o d o l ó g i c o. S i s t e m a s d e t r a b a j o. E s t u d i o d e p r o c e s o s. V i s i ó n, m i s i ó n y v a l o r e s.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co5_a1",
+                                            "text":  "Comunicar con claridad a personas colaboradoras y colegas los motivos y beneficios de los cambios."
+                                        },
+                                        {
+                                            "id":  "co5_a2",
+                                            "text":  "Motivar a su equipo y colegas para participar en el cambio, facilitando que las personas y equipos respondan de forma rápida y positiva a las prioridades cambiantes."
+                                        },
+                                        {
+                                            "id":  "co5_a3",
+                                            "text":  "Acompañar directamente a las personas que tienen más dificultad para adaptarse a los cambios, ofreciéndoles orientación y ayuda práctica."
+                                        },
+                                        {
+                                            "id":  "co5_a4",
+                                            "text":  "Liderar el cambio, inspirar confianza, movilizar al equipo y transformar el entorno con actitud positiva."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "No guiar al equipo en el cambio. Generar desmotivación o resistencia.",
+                                                       "basico":  "Comunicar las decisiones, pero no acompañar emocional ni operativamente al equipo.",
+                                                       "medio":  "Motivar y guiar al equipo. Facilitar la comprensión, el compromiso y la adaptación.",
+                                                       "alto":  "Ser referente de liderazgo en el cambio. Inspirar confianza, movilizar al equipo y transformar el entorno con actitud positiva."
+                                                   }
+                  }
+              ]
+}
