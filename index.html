@@ -14,15 +14,16 @@
   header .kicker{margin:0;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--verde2);font-weight:600}
   header h1{margin:.1rem 0 0;font-size:clamp(1.2rem,3vw,1.7rem)}
   main{max-width:960px;margin:0 auto;padding:clamp(1rem,4vw,2.5rem)}
-  .intro{color:var(--gris);max-width:60ch}
+  .intro{color:var(--gris);margin:0}
   .grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));margin-top:1.5rem}
   .card{border:1px solid var(--borde);border-radius:12px;padding:1rem 1.2rem;background:var(--suave)}
   .card h2{margin:.2rem 0 .8rem;font-size:1.05rem;color:var(--verde)}
   .roles{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.6rem}
-  .role{display:flex;flex-direction:column;gap:.35rem;padding-bottom:.6rem;border-bottom:1px dashed var(--borde)}
+  .role{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:1rem;padding-bottom:.6rem;border-bottom:1px dashed var(--borde)}
   .role:last-child{border-bottom:0;padding-bottom:0}
   .role-name{font-weight:600;font-size:.95rem}
-  .role-links{display:flex;gap:.5rem;flex-wrap:wrap}
+  .role-links{display:flex;gap:.5rem;flex-shrink:0}
+  .btn{white-space:nowrap}
   .btn{display:inline-block;text-decoration:none;font-size:.85rem;font-weight:600;padding:.4rem .8rem;border-radius:999px;background:var(--verde);color:#fff;border:1px solid var(--verde)}
   .btn:hover{background:var(--verde2)}
   .btn-ghost{background:#fff;color:var(--verde);}
