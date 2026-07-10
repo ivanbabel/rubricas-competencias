@@ -101,6 +101,11 @@ function escapeHTML(s){
 function escapeAttr(s){
   return escapeHTML(s).replace(/"/g, "&quot;");
 }
+// Valor de rol sin el prefijo "Rol " (para etiquetas "Rol: …"): "Rol directivo" -> "Directivo".
+function roleValue(rol){
+  var v = String(rol == null ? "" : rol).replace(/^\s*rol\s+/i, "");
+  return v ? v.charAt(0).toUpperCase() + v.slice(1) : v;
+}
 
 /* ---------- Aplicación principal ---------- */
 (function(){
@@ -616,7 +621,7 @@ function buildReportHTML(rubric, selections, scores, studentName, logoDataUrl){
   try{ fecha = new Date().toLocaleDateString("es-ES", { day: "2-digit", month: "long", year: "numeric" }); }catch(e){}
   var meta = [];
   if(studentName) meta.push("<div><strong>Persona:</strong> " + escapeHTML(studentName) + "</div>");
-  meta.push("<div><strong>Rol:</strong> " + escapeHTML(rubric.rubric_rol || "") + "</div>");
+  meta.push("<div><strong>Rol:</strong> " + escapeHTML(roleValue(rubric.rubric_rol)) + "</div>");
   if(fecha) meta.push("<div><strong>Fecha:</strong> " + escapeHTML(fecha) + "</div>");
 
   return "<!doctype html><html lang='es'><head><meta charset='utf-8'/>" +
@@ -717,7 +722,7 @@ function buildReportPDF(JsPDF, rubric, selections, scores, studentName, logo){
   try{ fecha = new Date().toLocaleDateString("es-ES", { day: "2-digit", month: "long", year: "numeric" }); }catch(e){}
   var metaParts = [];
   if(studentName) metaParts.push("Persona: " + studentName);
-  metaParts.push("Rol: " + (rubric.rubric_rol || ""));
+  metaParts.push("Rol: " + roleValue(rubric.rubric_rol));
   if(fecha) metaParts.push("Fecha: " + fecha);
   paragraph(metaParts.join("     ·     "), 9, MUTED, "normal", 4);
 
