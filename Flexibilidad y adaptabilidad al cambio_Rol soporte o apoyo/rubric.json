@@ -1,0 +1,263 @@
+{
+    "rubric_competency":  "Mapa de Competencias Básicas. Competencia 6 · Junta de Andalucía",
+    "rubric_title":  "Flexibilidad y adaptabilidad al cambio",
+    "rubric_rol":  "Rol soporte o apoyo",
+    "rubric_definition":  "Definición de la competencia: Modificar el comportamiento para dar respuesta a necesidades cambiantes, reajustando las prioridades, adoptando nuevos enfoques y maneras de actuar en función de las nuevas demandas, de forma que se mantengan o mejoren los niveles de efectividad en distintos entornos, con personas diferentes, con tareas distintas y ante problemas diversos.",
+    "rubric_instructions":  "Valora en qué grado realizas cada una de las actuaciones de los 5 comportamientos observables.",
+    "rubric_puntuation":  "Grado 1: nunca o rara vez · Grado 2: alguna vez · Grado 3: habitualmente · Grado 4: siempre o casi siempre.",
+    "language":  "es-ES",
+    "version":  "2026-07-06",
+    "scale":  {
+                  "name":  "Grados",
+                  "levels":  [
+                                 {
+                                     "value":  1,
+                                     "label":  "Grado 1",
+                                     "description":  "Nunca, rara vez. (Sin competencia) / No aplicable a mi puesto."
+                                 },
+                                 {
+                                     "value":  2,
+                                     "label":  "Grado 2",
+                                     "description":  "Alguna vez, ocasionalmente. (Nivel básico)"
+                                 },
+                                 {
+                                     "value":  3,
+                                     "label":  "Grado 3",
+                                     "description":  "Habitualmente, con frecuencia. (Nivel medio)"
+                                 },
+                                 {
+                                     "value":  4,
+                                     "label":  "Grado 4",
+                                     "description":  "Siempre, casi siempre. (Nivel alto)"
+                                 }
+                             ]
+              },
+    "scoring":  {
+                    "points_per_level":  {
+                                             "1":  1,
+                                             "2":  2,
+                                             "3":  3,
+                                             "4":  4
+                                         },
+                    "max_points_per_behavior":  4,
+                    "max_points_per_area":  16,
+                    "accredited_min_grade":  3,
+                    "global_model":  {
+                                         "model":  "quality_coverage",
+                                         "max_raw":  80,
+                                         "total_behaviors":  20,
+                                         "formula":  "80 * (raw/max_raw) * (0.5 + 0.5 * coverage)"
+                                     },
+                    "classification_rules":  {
+                                                 "area":  [
+                                                              {
+                                                                  "min":  0,
+                                                                  "max":  6,
+                                                                  "label":  "Sin competencia",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  7,
+                                                                  "max":  9,
+                                                                  "label":  "Nivel básico",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  10,
+                                                                  "max":  12,
+                                                                  "label":  "Nivel medio",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  13,
+                                                                  "max":  16,
+                                                                  "label":  "Nivel alto",
+                                                                  "description":  ""
+                                                              }
+                                                          ],
+                                                 "global":  [
+                                                                {
+                                                                    "min":  0,
+                                                                    "max":  40,
+                                                                    "label":  "Sin competencia",
+                                                                    "description":  "Rechazar sistemáticamente los cambios en tareas y procedimientos, mostrarse inflexible ante nuevas instrucciones y mantener rutinas obsoletas. En general no colaborar en la reorganización de tareas ni en la adaptación a nuevas formas de trabajo."
+                                                                },
+                                                                {
+                                                                    "min":  41,
+                                                                    "max":  60,
+                                                                    "label":  "Nivel básico",
+                                                                    "description":  "Aceptar los cambios solo cuando son obligatorios, mostrando cierta resistencia y necesitar instrucciones claras y continuas para aplicar nuevas tareas o procesos. Su implicación en los cambios es limitada y evitar asumir tareas nuevas si no se le exige."
+                                                                },
+                                                                {
+                                                                    "min":  61,
+                                                                    "max":  70,
+                                                                    "label":  "Nivel medio",
+                                                                    "description":  "Adaptarse con flexibilidad y buena disposición a nuevos procedimientos operativos y colaborar con sus compañeros y compañeras para implementar cambios en la organización de tareas. Buscar mejorar su rendimiento ante cambios y mantener una actitud positiva para adaptarse a nuevas situaciones."
+                                                                },
+                                                                {
+                                                                    "min":  71,
+                                                                    "max":  80,
+                                                                    "label":  "Nivel alto",
+                                                                    "description":  "Acoger los cambios de forma constructiva y adaptarse con agilidad a situaciones nuevas. Integrarse con rapidez en nuevos equipos. Contribuir a que otras personas también lo hagan con actitud abierta, compartiendo lo que se saben y ayudándose en las dificultades. Ayudar, acompañar y transmitir confianza para que otras personas se adapten mejor a los cambios. Buscar oportunidades de aprendizaje y éxito compartido en la flexibilidad y adaptabilidad al cambio."
+                                                                }
+                                                            ]
+                                             }
+                },
+    "areas":  [
+                  {
+                      "id":  "co1",
+                      "index":  1,
+                      "title":  "Aceptar los cambios de manera positiva y constructiva",
+                      "description":  "Descripción: Recibe los cambios con actitud positiva, sin oponerse ni generar resistencia, incluso si suponen salir de la rutina o de lo habitual.",
+                      "evidencias":  "R e u n i o n e s d e t r a b a j o. P r e s e n t a c i o n e s. C o n s u l t a s. I n s t r u c c i o n e s.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co1_a1",
+                                            "text":  "Recibir instrucciones nuevas con disposición y sin queja, escuchando sin prejuicios cuando se le explican razones de un cambio."
+                                        },
+                                        {
+                                            "id":  "co1_a2",
+                                            "text":  "Aceptar con disposición los cambios en turnos, tareas o herramientas cuando es necesario."
+                                        },
+                                        {
+                                            "id":  "co1_a3",
+                                            "text":  "Adaptarse rápidamente a los cambios sin generar conflictos, rumores ni resistencia."
+                                        },
+                                        {
+                                            "id":  "co1_a4",
+                                            "text":  "Contribuir a que otros compañeros y compañeras acepten el cambio con actitud positiva."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "Mostrarse reacio a aceptar cambios. Expresar rechazo o incomodidad ante modificaciones en tareas, turnos o formas de trabajo.",
+                                                       "basico":  "Aceptar los cambios con cierta dificultad, pero no rechazarlos abiertamente. Necesitar apoyo para entenderlos o aplicarlos.",
+                                                       "medio":  "Recibir los cambios con actitud positiva. Ajustarse a nuevas tareas o instrucciones con normalidad.",
+                                                       "alto":  "Acoger los cambios de forma constructiva. Adaptarse rápidamente y contribuir a que otras personas también lo hagan con actitud abierta."
+                                                   }
+                  },
+                  {
+                      "id":  "co2",
+                      "index":  2,
+                      "title":  "Adaptarse a trabajar con personas distintas a las habituales",
+                      "description":  "Descripción: Contribuye a un ambiente de colaboración adaptándose a trabajar con otras personas distintas a las de su equipo o unidad. Comparte su experiencia de forma constructiva evitando actitudes negativas o desmotivadoras.",
+                      "evidencias":  "R e u n i o n e s d e t r a b a j o. P r e s e n t a c i o n e s. C o n s u l t a s. I n s t r u c c i o n e s. C o n t r o l d e t i e m p o. C o n t r o l e c o n ó m i c o. C o m u n i d a d e s d e p r á c t i c a.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co2_a1",
+                                            "text":  "Integrarse con rapidez en nuevos equipos, situaciones o entornos de trabajo, aprendiendo lo necesario para adaptarse a diferentes formas de trabajar y comunicarse."
+                                        },
+                                        {
+                                            "id":  "co2_a2",
+                                            "text":  "Compartir conocimientos y maneras de hacer con otras personas que no son del equipo o unidad."
+                                        },
+                                        {
+                                            "id":  "co2_a3",
+                                            "text":  "Evitar actitudes y comentarios negativos que puedan generar tensión en procesos de trabajo con personas distintas a las habituales."
+                                        },
+                                        {
+                                            "id":  "co2_a4",
+                                            "text":  "Buscar oportunidades de aprendizaje y éxito compartido al trabajar con personas distintas a las habituales."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "No mostrar interés en adaptarse a trabajar con personas distintas a las habituales. No integrarse y resistirse.",
+                                                       "basico":  "Aceptar el trabajo con otras personas si se lo explican, pero no buscar activamente la adaptación.",
+                                                       "medio":  "Esforzarse por trabajar con personas distintas a las habituales.",
+                                                       "alto":  "Integrarse con rapidez en nuevos equipos, buscar oportunidades de aprendizaje y éxito compartido, compartir lo que se sabe y ayudar en las dificultades."
+                                                   }
+                  },
+                  {
+                      "id":  "co3",
+                      "index":  3,
+                      "title":  "Aplicar las metodologías y herramientas propuestas por la organización para adaptarse a los cambios",
+                      "description":  "Descripción: Consiste en aplicar con éxito y sin resistencia metodologías y herramientas propuestas por la organización antes situaciones nuevas, ayudando a que las otras personas del equipo se sumen sin resistencia.",
+                      "evidencias":  "R e u n i o n e s d e t r a b a j o. P r e s e n t a c i o n e s. C o n s u l t a s. I n s t r u c c i o n e s. M e t o d o l o g í a s H e r r a m i e n t a s C o m u n i d a d e s d e p r á c t i c a. P l a n e s d e a c t u a c i ó n.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co3_a1",
+                                            "text":  "Aplicar con éxito las metodologías y herramientas propuestas por la organización para adaptarse a los cambios."
+                                        },
+                                        {
+                                            "id":  "co3_a2",
+                                            "text":  "Preguntar e interesarse por nuevas formas de hacer las cosas, dando ejemplo con su actitud abierta cuando se introduce una nueva forma de trabajar."
+                                        },
+                                        {
+                                            "id":  "co3_a3",
+                                            "text":  "Cambiar metodologías, estrategias, herramientas y planes de actuación si es necesario para adaptarse a los cambios."
+                                        },
+                                        {
+                                            "id":  "co3_a4",
+                                            "text":  "Animar y ayudar a compañeros y compañeras a aplicar metodologías y herramientas propuestas por la organización cuando hay resistencia al cambio."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "No aplicar las metodologías y herramientas que propone la organización.",
+                                                       "basico":  "Aplicar de manera obligada y con actitud pasiva metodologías y herramientas propuestos por la organización para adaptarse a los cambios.",
+                                                       "medio":  "Aplicar con éxito las metodologías y herramientas propuestas por la organización para adaptarse a los cambios.",
+                                                       "alto":  "Aplicar con éxito las metodologías y herramientas propuestas por la organización para adaptarse a los cambios y ayudar, acompañar y transmitir confianza para que otras personas se adapten mejor a los cambios."
+                                                   }
+                  },
+                  {
+                      "id":  "co4",
+                      "index":  4,
+                      "title":  "Realizar eficaz y eficientemente diversas tareas al mismo tiempo",
+                      "description":  "Descripción: Consiste en alcanzar los objetivos propuestos realizando las tareas necesarias (eficacia) y utilizando la menor cantidad de recursos posibles de tiempo, dinero o esfuerzo (eficiencia).",
+                      "evidencias":  "R e u n i o n e s d e t r a b a j o. P r e s e n t a c i o n e s. C o n s u l t a s. I n s t r u c c i o n e s. C o n t r o l d e t i e m p o. C o n t r o l e c o n ó m i c o.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co4_a1",
+                                            "text":  "Adaptarse a la realización simultánea de diversas tareas sin perder el foco."
+                                        },
+                                        {
+                                            "id":  "co4_a2",
+                                            "text":  "No reclamar continuamente más recursos para la realización de las diferentes tareas."
+                                        },
+                                        {
+                                            "id":  "co4_a3",
+                                            "text":  "Alcanzar los objetivos propuestos con eficacia, realizando al mismo tiempo las tareas necesarias para ello."
+                                        },
+                                        {
+                                            "id":  "co4_a4",
+                                            "text":  "Alcanzar los objetivos propuestos con eficiencia, utilizando la menor cantidad posible de recursos (tiempo, dinero, esfuerzo…)."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "Ser incapaz de realizar diversas tareas al mismo tiempo con eficacia ni eficiencia.",
+                                                       "basico":  "En ocasiones alcanzar los objetivos pero reclama recursos continuamente.",
+                                                       "medio":  "Alcanzar los objetivos propuestos realizando diversas tareas al mismo tiempo.",
+                                                       "alto":  "Alcanzar los objetivos propuestos realizando diversas tareas al mismo tiempo y utilizando la menor cantidad posible de recursos (tiempo, dinero, esfuerzo…)."
+                                                   }
+                  },
+                  {
+                      "id":  "co5",
+                      "index":  5,
+                      "title":  "Realizar diferentes tareas en una nueva situación, adoptando los cambios necesarios para lograr resultados",
+                      "description":  "Descripción: Se ajusta con rapidez y serenidad a cambios de planes, urgencias o incidencias en su trabajo, realizando las tareas que son necesarias. Sabe mantener la eficacia en entornos variables o cuando surgen tareas inesperadas.",
+                      "evidencias":  "R e u n i o n e s d e t r a b a j o. P r e s e n t a c i o n e s. C o n s u l t a s. I n s t r u c c i o n e s.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co5_a1",
+                                            "text":  "Ser capaz de realizar tareas distintas a las habituales si es necesario, cuando el equipo se ve afectado por una urgencia."
+                                        },
+                                        {
+                                            "id":  "co5_a2",
+                                            "text":  "Tener rapidez y serenidad en la realización de las tareas que requiere una nueva situación."
+                                        },
+                                        {
+                                            "id":  "co5_a3",
+                                            "text":  "Modificar su ritmo de trabajo en función de las tareas del momento."
+                                        },
+                                        {
+                                            "id":  "co5_a4",
+                                            "text":  "Cambiar su comportamiento, tareas, y manera de actuar en una nueva situación, adoptando los cambios necesarios para lograr resultados."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "Bloquearse o perder eficacia ante tareas no previstas. Le cuesta adaptarse a nuevas personas, ritmos o condiciones.",
+                                                       "basico":  "Adaptarse con esfuerzo a cambios o imprevistos, pero necesitar instrucciones claras o supervisión.",
+                                                       "medio":  "Ajustar su forma de trabajar ante una nueva situación, realizando cambios de tareas para lograr resultados.",
+                                                       "alto":  "Adaptarse con agilidad a situaciones nuevas. Cambiar su comportamiento, tareas, y manera de actuar en una nueva situación, adoptando los cambios necesarios para lograr resultados."
+                                                   }
+                  }
+              ]
+}

@@ -1,8 +1,8 @@
 {
-    "rubric_competency":  "Mapa de Competencias · Junta de Andalucía",
+    "rubric_competency":  "Mapa de Competencias Básicas. Competencia 2 · Junta de Andalucía",
     "rubric_title":  "Orientación a la ciudadanía",
     "rubric_rol":  "Rol técnico",
-    "rubric_definition":  "Mostrar motivación para conocer y comprender las necesidades de la ciudadanía o personas usuarias, orientando las políticas, proyectos y las acciones a la satisfacción de sus necesidades, requisitos y expectativas.",
+    "rubric_definition":  "Definición de la competencia: Mostrar motivación para conocer y comprender las necesidades de la ciudadanía o personas usuarias, orientando las políticas, proyectos y las acciones a la satisfacción de sus necesidades, requisitos y expectativas.",
     "rubric_instructions":  "Valora en qué grado realizas cada una de las actuaciones de los 5 comportamientos observables.",
     "rubric_puntuation":  "Grado 1: nunca o rara vez · Grado 2: alguna vez · Grado 3: habitualmente · Grado 4: siempre o casi siempre.",
     "language":  "es-ES",
@@ -46,7 +46,7 @@
                                          "model":  "quality_coverage",
                                          "max_raw":  80,
                                          "total_behaviors":  20,
-                                         "formula":  "100 * (raw/max_raw) * (0.5 + 0.5 * coverage)"
+                                         "formula":  "80 * (raw/max_raw) * (0.5 + 0.5 * coverage)"
                                      },
                     "classification_rules":  {
                                                  "area":  [
@@ -78,25 +78,25 @@
                                                  "global":  [
                                                                 {
                                                                     "min":  0,
-                                                                    "max":  49,
+                                                                    "max":  40,
                                                                     "label":  "Sin competencia",
                                                                     "description":  "No mostrar disposición para atender a la ciudadanía ni transmitir la información técnica de forma comprensible. Limitarse a contestar de forma genérica, evitando involucrarse en la resolución de casos y actuando con distancia o poca empatía, generando frustración o desconfianza en la persona usuaria."
                                                                 },
                                                                 {
-                                                                    "min":  50,
-                                                                    "max":  69,
+                                                                    "min":  41,
+                                                                    "max":  60,
                                                                     "label":  "Nivel básico",
                                                                     "description":  "Atender a la ciudadanía con corrección, pero ofreciendo explicaciones técnicas sin adaptarlas al perfil de la persona usuaria. Responder con lo mínimo exigido, sin comprobar si se ha comprendido. Mostrar respeto, pero sin iniciativa para mejorar la atención o aclarar dudas con detalle."
                                                                 },
                                                                 {
-                                                                    "min":  70,
-                                                                    "max":  89,
+                                                                    "min":  61,
+                                                                    "max":  70,
                                                                     "label":  "Nivel medio",
                                                                     "description":  "Ofrecer atención técnica clara y accesible. Escuchar activamente, adaptar su lenguaje a distintos perfiles y resolver las consultas dentro de su ámbito con responsabilidad. Colaborar con otras unidades para asegurar una atención adecuada y contribuir al buen funcionamiento del servicio."
                                                                 },
                                                                 {
-                                                                    "min":  90,
-                                                                    "max":  100,
+                                                                    "min":  71,
+                                                                    "max":  80,
                                                                     "label":  "Nivel alto",
                                                                     "description":  "Proporcionar atención técnica precisa, clara y empática. Anticiparse a dudas, buscar soluciones adaptadas y promover una atención centrada en las personas. Dedicar tiempo y esfuerzo para conocer necesidades y expectativas, y colaborar en procesos de mejora de la atención a la ciudadanía."
                                                                 }
@@ -108,7 +108,7 @@
                       "id":  "co1",
                       "index":  1,
                       "title":  "Ofrecer a la ciudadanía o personas usuarias un servicio objetivo, transparente y adaptado a sus necesidades",
-                      "description":  "Supone establecer una relación profesional basada en el respeto, la cortesía y la empatía, cuidando la forma objetiva y transparente en la que se ofrece el servicio o asesoramiento, y generando un entorno de confianza.",
+                      "description":  "Descripción: Supone establecer una relación profesional basada en el respeto, la cortesía y la empatía, cuidando la forma objetiva y transparente en la que se ofrece el servicio o asesoramiento, y generando un entorno de confianza.",
                       "evidencias":  "H o j a s d e q u e j a s o r e c l a m a c i o n e s. T i e m p o d e e s p e r a. L l a m a d a s s i n r e s p u e s t a. B u z ó n d e s u g e r e n c i a s. N.º d e c o n s u l t a s o v i s i t a s h a s t a t e n e r l a r e s p u e s t a b u s c a d a.",
                       "behaviors":  [
                                         {
@@ -139,7 +139,7 @@
                       "id":  "co2",
                       "index":  2,
                       "title":  "Informar a la ciudadanía o personas usuarias sobre las distintas opciones posibles a la hora de buscar la mejor solución",
-                      "description":  "Habilidad de guiar a la persona usuaria durante su gestión o trámite, proporcionándole información clara, comprensible y útil para resolver su asunto con éxito teniendo en cuenta las distintas opciones posibles.",
+                      "description":  "Descripción: Habilidad de guiar a la persona usuaria durante su gestión o trámite, proporcionándole información clara, comprensible y útil para resolver su asunto con éxito teniendo en cuenta las distintas opciones posibles.",
                       "evidencias":  "E n c u e s t a s d e s a t i s f a c c i ó n. E n t r e v i s t a s. G r u p o s d e t r a b a j o. B u z ó n d e s u g e r e n c i a s. L l a m a d a s. R e u n i o n e s f o r m a l e s e i n f o r m a l e s.",
                       "behaviors":  [
                                         {
@@ -170,7 +170,7 @@
                       "id":  "co3",
                       "index":  3,
                       "title":  "Asegurarse que en situaciones problemáticas se satisfacen tanto los intereses de la ciudadanía o personas usuarias como los de la organización",
-                      "description":  "Implica resolver con agilidad y precisión en situaciones problemáticas, cumpliendo los plazos establecidos y asegurando que tanto la persona usuaria como la organización satisfacen sus intereses y obtienen una respuesta adecuada.",
+                      "description":  "Descripción: Implica resolver con agilidad y precisión en situaciones problemáticas, cumpliendo los plazos establecidos y asegurando que tanto la persona usuaria como la organización satisfacen sus intereses y obtienen una respuesta adecuada.",
                       "evidencias":  "E n c u e s t a s d e s a t i s f a c c i ó n. E n t r e v i s t a s. G r u p o s d e t r a b a j o. B u z ó n d e s u g e r e n c i a s. L l a m a d a s. R e u n i o n e s f o r m a l e s e i n f o r m a l e s.",
                       "behaviors":  [
                                         {
@@ -201,7 +201,7 @@
                       "id":  "co4",
                       "index":  4,
                       "title":  "Dedicar tiempo y esfuerzos en conocer las necesidades, expectativas y grado de satisfacción de la ciudadanía o personas usuarias",
-                      "description":  "Consiste en escuchar activamente y hacer las preguntas adecuadas que permitan comprender con claridad lo que la persona usuaria necesita, que expectativas tiene y su grado de satisfacción con el servicio prestado.",
+                      "description":  "Descripción: Consiste en escuchar activamente y hacer las preguntas adecuadas que permitan comprender con claridad lo que la persona usuaria necesita, que expectativas tiene y su grado de satisfacción con el servicio prestado.",
                       "evidencias":  "E n c u e s t a s d e s a t i s f a c c i ó n. E n t r e v i s t a s. G r u p o s d e t r a b a j o. B u z ó n d e s u g e r e n c i a s. L l a m a d a s. R e u n i o n e s f o r m a l e s e i n f o r m a l e s.",
                       "behaviors":  [
                                         {
@@ -232,7 +232,7 @@
                       "id":  "co5",
                       "index":  5,
                       "title":  "Colaborar en la elaboración de metodologías y procedimientos para mejorar la atención a la ciudadanía",
-                      "description":  "Supone tener una actitud activa y colaborativa en la mejora de la atención a la ciudadanía, mediante la participación en las distintas fases de diagnóstico, elaboración de metodologías, implementación y evaluación.",
+                      "description":  "Descripción: Supone tener una actitud activa y colaborativa en la mejora de la atención a la ciudadanía, mediante la participación en las distintas fases de diagnóstico, elaboración de metodologías, implementación y evaluación.",
                       "evidencias":  "E n c u e s t a s d e s a t i s f a c c i ó n. E n t r e v i s t a s. G r u p o s d e t r a b a j o. B u z ó n d e s u g e r e n c i a s. L l a m a d a s. R e u n i o n e s f o r m a l e s e i n f o r m a l e s.",
                       "behaviors":  [
                                         {

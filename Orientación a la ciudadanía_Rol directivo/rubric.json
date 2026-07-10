@@ -1,8 +1,8 @@
 {
-    "rubric_competency":  "Mapa de Competencias · Junta de Andalucía",
+    "rubric_competency":  "Mapa de Competencias Básicas. Competencia 2 · Junta de Andalucía",
     "rubric_title":  "Orientación a la ciudadanía",
     "rubric_rol":  "Rol directivo",
-    "rubric_definition":  "Mostrar motivación para conocer y comprender las necesidades de la ciudadanía o personas usuarias, orientando las políticas, proyectos y las acciones a la satisfacción de sus necesidades, requisitos y expectativas.",
+    "rubric_definition":  "Definición de la competencia: Mostrar motivación para conocer y comprender las necesidades de la ciudadanía o personas usuarias, orientando las políticas, proyectos y las acciones a la satisfacción de sus necesidades, requisitos y expectativas.",
     "rubric_instructions":  "Valora en qué grado realizas cada una de las actuaciones de los 5 comportamientos observables.",
     "rubric_puntuation":  "Grado 1: nunca o rara vez · Grado 2: alguna vez · Grado 3: habitualmente · Grado 4: siempre o casi siempre.",
     "language":  "es-ES",
@@ -46,7 +46,7 @@
                                          "model":  "quality_coverage",
                                          "max_raw":  80,
                                          "total_behaviors":  20,
-                                         "formula":  "100 * (raw/max_raw) * (0.5 + 0.5 * coverage)"
+                                         "formula":  "80 * (raw/max_raw) * (0.5 + 0.5 * coverage)"
                                      },
                     "classification_rules":  {
                                                  "area":  [
@@ -78,25 +78,25 @@
                                                  "global":  [
                                                                 {
                                                                     "min":  0,
-                                                                    "max":  49,
+                                                                    "max":  40,
                                                                     "label":  "Sin competencia",
                                                                     "description":  "No priorizar la atención ciudadana ni impulsar medidas que garanticen su calidad. No integrar el enfoque de servicio público en su liderazgo, mantener estructuras cerradas y transmitir una visión burocrática, distante o poco accesible. No dar al equipo orientación clara sobre cómo mejorar el trato a la ciudadanía."
                                                                 },
                                                                 {
-                                                                    "min":  50,
-                                                                    "max":  69,
+                                                                    "min":  41,
+                                                                    "max":  60,
                                                                     "label":  "Nivel básico",
                                                                     "description":  "Valorar la importancia de la atención ciudadana, pero actuar de forma reactiva y puntual. Promover la corrección formal en la atención, aunque sin traducirlo en una estrategia definida ni asegurar coherencia organizativa."
                                                                 },
                                                                 {
-                                                                    "min":  70,
-                                                                    "max":  89,
+                                                                    "min":  61,
+                                                                    "max":  70,
                                                                     "label":  "Nivel medio",
                                                                     "description":  "Impulsar mejoras en los canales de atención y promover buenas prácticas orientadas a la ciudadanía. Asegurarse de que los equipos tengan pautas claras para atender de forma accesible y equitativa. Identificar puntos críticos y colaborar en la revisión de procedimientos que afectan a la experiencia ciudadana."
                                                                 },
                                                                 {
-                                                                    "min":  90,
-                                                                    "max":  100,
+                                                                    "min":  71,
+                                                                    "max":  80,
                                                                     "label":  "Nivel alto",
                                                                     "description":  "Liderar de forma proactiva una cultura institucional basada en la mejora continua del servicio de atención a la ciudadanía. Garantizar la accesibilidad y calidad en la atención como eje estratégico, promover la participación ciudadana, y alinear procesos, formación y estructuras para consolidar un modelo de calidad en la atención a la ciudadanía."
                                                                 }
@@ -108,7 +108,7 @@
                       "id":  "co1",
                       "index":  1,
                       "title":  "Planificar sus actividades y las del equipo considerando las necesidades y expectativas de la ciudadanía o personas usuarias",
-                      "description":  "Supone tener presente las necesidades y expectativas de la ciudadanía desde el principio del servicio público, esto es, desde la planificación de actividades propias y del equipo.",
+                      "description":  "Descripción: Supone tener presente las necesidades y expectativas de la ciudadanía desde el principio del servicio público, esto es, desde la planificación de actividades propias y del equipo.",
                       "evidencias":  "P l a n e s. P r o g r a m a s. B u z ó n d e s u g e r e n c i a s. E n c u e s t a s. C u e s t i o n a r i o s. M e m o r i a s. R e s u l t a d o s d e e j e c u c i ó n.",
                       "behaviors":  [
                                         {
@@ -139,7 +139,7 @@
                       "id":  "co2",
                       "index":  2,
                       "title":  "Definir indicadores que aporten información sobre el grado de satisfacción de la ciudadanía o personas usuarias",
-                      "description":  "Se refiere a la obligación de toda organización de conocer el grado de satisfacción de la ciudadanía o personas usuarias con los servicios prestados, y para ello es necesario definir indicadores objetivos que aporten la información precisa.",
+                      "description":  "Descripción: Se refiere a la obligación de toda organización de conocer el grado de satisfacción de la ciudadanía o personas usuarias con los servicios prestados, y para ello es necesario definir indicadores objetivos que aporten la información precisa.",
                       "evidencias":  "E n c u e s t a s d e s a t i s f a c c i ó n. E n t r e v i s t a s. G r u p o s d e t r a b a j o. B u z ó n d e s u g e r e n c i a s. L l a m a d a s. R e u n i o n e s f o r m a l e s e i n f o r m a l e s.",
                       "behaviors":  [
                                         {
@@ -170,7 +170,7 @@
                       "id":  "co3",
                       "index":  3,
                       "title":  "Realizar un seguimiento continuo de la atención proporcionada a la ciudadanía o personas usuarias",
-                      "description":  "Implica evaluar de manera continua el servicio prestado a la ciudadanía, para asegurar que satisfacen sus intereses y obtienen una respuesta adecuada.",
+                      "description":  "Descripción: Implica evaluar de manera continua el servicio prestado a la ciudadanía, para asegurar que satisfacen sus intereses y obtienen una respuesta adecuada.",
                       "evidencias":  "C u e s t i o n a r i o s d e s a t i s f a c c i ó n. E n t r e v i s t a s. G r u p o s d e t r a b a j o. B u z ó n d e s u g e r e n c i a s. L l a m a d a s. R e u n i o n e s f o r m a l e s e i n f o r m a l e s. P l a t a f o r m a s. S i s t e m a s d e n o t i f i c a c i ó n.",
                       "behaviors":  [
                                         {
@@ -201,7 +201,7 @@
                       "id":  "co4",
                       "index":  4,
                       "title":  "Mantener relaciones con la ciudadanía o personas usuarias para el intercambio de información y servicios",
-                      "description":  "Consiste en organizar encuentros u otras formas de intercambio para escuchar activamente y hacer las preguntas adecuadas que permitan comprender lo que la persona usuaria necesita, que expectativas tiene y su grado de satisfacción con el servicio prestado.",
+                      "description":  "Descripción: Consiste en organizar encuentros u otras formas de intercambio para escuchar activamente y hacer las preguntas adecuadas que permitan comprender lo que la persona usuaria necesita, que expectativas tiene y su grado de satisfacción con el servicio prestado.",
                       "evidencias":  "E n c u e s t a s d e s a t i s f a c c i ó n. E n t r e v i s t a s. G r u p o s d e t r a b a j o. B u z ó n d e s u g e r e n c i a s. L l a m a d a s. R e u n i o n e s f o r m a l e s e i n f o r m a l e s.",
                       "behaviors":  [
                                         {
@@ -232,7 +232,7 @@
                       "id":  "co5",
                       "index":  5,
                       "title":  "Dirigir el desarrollo de metodologías y procedimientos para mejorar la atención a la ciudadanía",
-                      "description":  "Supone tener una actitud activa y colaborativa en la mejora de la atención a la ciudadanía, mediante la dirección de procedimientos en las distintas fases de diagnóstico, elaboración de metodologías, implementación y evaluación.",
+                      "description":  "Descripción: Supone tener una actitud activa y colaborativa en la mejora de la atención a la ciudadanía, mediante la dirección de procedimientos en las distintas fases de diagnóstico, elaboración de metodologías, implementación y evaluación.",
                       "evidencias":  "E n c u e s t a s d e s a t i s f a c c i ó n. E n t r e v i s t a s. G r u p o s d e t r a b a j o. B u z ó n d e s u g e r e n c i a s. L l a m a d a s. R e u n i o n e s f o r m a l e s e i n f o r m a l e s.",
                       "behaviors":  [
                                         {

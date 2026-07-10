@@ -1,8 +1,8 @@
 {
-    "rubric_competency":  "Mapa de Competencias · Junta de Andalucía",
+    "rubric_competency":  "Mapa de Competencias Básicas. Competencia 4 · Junta de Andalucía",
     "rubric_title":  "Aprendizaje permanente",
     "rubric_rol":  "Rol directivo",
-    "rubric_definition":  "Realizar actividades que permitan la actualización continua de los conocimientos y competencias profesionales, así como su aplicación al trabajo para optimizar el desempeño laboral.",
+    "rubric_definition":  "Definición de la competencia: Realizar actividades que permitan la actualización continua de los conocimientos y competencias profesionales, así como su aplicación al trabajo para optimizar el desempeño laboral.",
     "rubric_instructions":  "Valora en qué grado realizas cada una de las actuaciones de los 5 comportamientos observables.",
     "rubric_puntuation":  "Grado 1: nunca o rara vez · Grado 2: alguna vez · Grado 3: habitualmente · Grado 4: siempre o casi siempre.",
     "language":  "es-ES",
@@ -46,7 +46,7 @@
                                          "model":  "quality_coverage",
                                          "max_raw":  80,
                                          "total_behaviors":  20,
-                                         "formula":  "100 * (raw/max_raw) * (0.5 + 0.5 * coverage)"
+                                         "formula":  "80 * (raw/max_raw) * (0.5 + 0.5 * coverage)"
                                      },
                     "classification_rules":  {
                                                  "area":  [
@@ -78,25 +78,25 @@
                                                  "global":  [
                                                                 {
                                                                     "min":  0,
-                                                                    "max":  49,
+                                                                    "max":  40,
                                                                     "label":  "Sin competencia",
                                                                     "description":  "No reconocer la necesidad de actualizarse ni de impulsar el aprendizaje en su unidad. Resistirse al cambio, mantener prácticas obsoletas y no promover espacios de desarrollo profesional para su equipo. Su falta de implicación repercute negativamente en la capacidad de adaptación de la organización."
                                                                 },
                                                                 {
-                                                                    "min":  50,
-                                                                    "max":  69,
+                                                                    "min":  41,
+                                                                    "max":  60,
                                                                     "label":  "Nivel básico",
                                                                     "description":  "Participar en procesos formativos cuando se le requiere, pero no conectarlos con la gestión estratégica. No transmitir una visión clara de apoyo al aprendizaje permanente con su liderazgo. Apoyar puntualmente la formación del equipo, pero sin integrarla en los procesos de transformación."
                                                                 },
                                                                 {
-                                                                    "min":  70,
-                                                                    "max":  89,
+                                                                    "min":  61,
+                                                                    "max":  70,
                                                                     "label":  "Nivel medio",
                                                                     "description":  "Valorar el apoyo al aprendizaje propio y del equipo como parte de su función directiva. Identificar sus propias necesidades de desarrollo, participar en formación avanzada y promover la mejora continua dentro de su equipo. Integrar lo aprendido en la toma de decisiones y comenzar a generar espacios para el aprendizaje colectivo."
                                                                 },
                                                                 {
-                                                                    "min":  90,
-                                                                    "max":  100,
+                                                                    "min":  71,
+                                                                    "max":  80,
                                                                     "label":  "Nivel alto",
                                                                     "description":  "Ser referente en liderazgo basado en el aprendizaje. Anticiparse a los desafíos formativos de su entorno, impulsar planes de desarrollo profesional para su equipo y liderar con el ejemplo. Promover una cultura organizacional de aprendizaje colaborativo e innovación alineada con los valores del servicio público."
                                                                 }
@@ -108,7 +108,7 @@
                       "id":  "co1",
                       "index":  1,
                       "title":  "Detectar y comunicar las necesidades de formación propias y de las personas con las que colabora",
-                      "description":  "Capacidad para identificar tanto sus propias necesidades de formación como las de su equipo, utilizando esta información para planificar acciones de desarrollo que estén alineadas con los objetivos estratégicos de la organización.",
+                      "description":  "Descripción: Capacidad para identificar tanto sus propias necesidades de formación como las de su equipo, utilizando esta información para planificar acciones de desarrollo que estén alineadas con los objetivos estratégicos de la organización.",
                       "evidencias":  "P l a n i n d i v i d u a l d e d e s a r r o l l o. S o l i c i t u d e s d e f o r m a c i ó n. I n f o r m e s d e d e t e c c i ó n d e n e c e s i d a d e s. P a r t i c i p a c i ó n e n e n t r e v i s t a s d e d e s a r r o l l o. P r o p u e s t a s f o r m a t i v a s r e a l i z a d a s. C u e s t i o n a r i o d e n e c e s i d a d e s f o r m a t i v a s. P a r t i c i p a c i ó n e n @n f o r a D i s e ñ o d e p l a n d e f o r m a c i ó n.",
                       "behaviors":  [
                                         {
@@ -139,7 +139,7 @@
                       "id":  "co2",
                       "index":  2,
                       "title":  "Realizar acciones de formación por iniciativa propia o que le oferta la organización",
-                      "description":  "Implica participar activamente en actividades de aprendizaje y desarrollo profesional avanzadas, manteniéndose actualizado en tendencias y buenas prácticas, y mostrando compromiso con su propio crecimiento como líder público.",
+                      "description":  "Descripción: Implica participar activamente en actividades de aprendizaje y desarrollo profesional avanzadas, manteniéndose actualizado en tendencias y buenas prácticas, y mostrando compromiso con su propio crecimiento como líder público.",
                       "evidencias":  "C e r t i f i c a d o s d e a s i s t e n c i a o a p r o v e c h a m i e n t o. H i s t o r i a l d e f o r m a c i ó n. P a r t i c i p a c i ó n e n g r u p o s d e t r a b a j o. P a r t i c i p a c i ó n e n C o m u n i d a d e s d e p r á c t i c a. P u b l i c a c i o n e s. M e n t o r í a P a r t i c i p a c i ó n e n r e d p r o f e s i o n a l u o t r a s s i m i l a r e s P a r t i c i p a c i ó n e n p i l o t o s o g r u p o s d e i n n o v a c i ó n. P a r t i c i p a c i ó n e n p l a n e s y p r o y e c t o s c o m o e l P r o y e c t o D P C D d e D e s a r r o l l o P e r s o n a l i z a d o d e C o m p e t e n c i a s D i r e c t i v a s.",
                       "behaviors":  [
                                         {
@@ -170,7 +170,7 @@
                       "id":  "co3",
                       "index":  3,
                       "title":  "Buscar información sobre buenas prácticas profesionales que llevan a cabo otras organizaciones, para aplicarlas en la suya",
-                      "description":  "Supone asumir el compromiso de liderar su desarrollo y el de su equipo a través de la observación y el estudio de las buenas prácticas que realizan otras organizaciones similares.",
+                      "description":  "Descripción: Supone asumir el compromiso de liderar su desarrollo y el de su equipo a través de la observación y el estudio de las buenas prácticas que realizan otras organizaciones similares.",
                       "evidencias":  "E s t u d i o s d e b e n c h m a r k i n g o s i m i l a r e s. P a r t i c i p a c i ó n e n p l a n e s y p r o y e c t o s. P r o p u e s t a s d e m e j o r a. A l i a n z a s y c o n v e n i o s d e c o l a b o r a c i ó n M e n t o r í a",
                       "behaviors":  [
                                         {
@@ -201,7 +201,7 @@
                       "id":  "co4",
                       "index":  4,
                       "title":  "Aplicar métodos de gestión del conocimiento para potenciar un mayor aprendizaje y desarrollo de personas y equipos",
-                      "description":  "Utiliza estrategias y técnicas orientadas a identificar, capturar, almacenar, compartir y aplicar el conocimiento dentro de la organización, convirtiendo el aprendizaje colectivo en un activo estratégico para mejorar la toma de decisiones y la productividad.",
+                      "description":  "Descripción: Utiliza estrategias y técnicas orientadas a identificar, capturar, almacenar, compartir y aplicar el conocimiento dentro de la organización, convirtiendo el aprendizaje colectivo en un activo estratégico para mejorar la toma de decisiones y la productividad.",
                       "evidencias":  "B a s e s d e d a t o s M a n u a l e s y o t r o s d o c u m e n t o s g e n e r a d o s c o l a b o r a t i v a m e n t e. P r o c e d i m i e n t o s m o d i f i c a d o s C u a d r o s d e m a n d o. R e u n i o n e s p a r a l a g e s t i ó n d e l c o n o c i m i e n t o. H e r r a m i e n t a s y m o d e l o s a p l i c a d o s.",
                       "behaviors":  [
                                         {
@@ -232,7 +232,7 @@
                       "id":  "co5",
                       "index":  5,
                       "title":  "Favorecer la creación de grupos de mejora y espacios de aprendizaje colaborativo e innovación",
-                      "description":  "Genera un entorno organizativo que favorece el intercambio de aprendizajes para la mejora continua, la innovación y el desarrollo del talento.",
+                      "description":  "Descripción: Genera un entorno organizativo que favorece el intercambio de aprendizajes para la mejora continua, la innovación y el desarrollo del talento.",
                       "evidencias":  "G r u p o d e m e j o r a C o m u n i d a d d e p r á c t i c a R e p o s i t o r i o s y b a s e s d e d a t o s c o m p a r t i d a s R e u n i o n e s i n f o r m a l e s",
                       "behaviors":  [
                                         {

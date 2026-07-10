@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="RUBRIC_Compromiso_SPO_Rol_soporte_o_apoyo" version="1.0"
+  xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+  xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+  http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <organizations default="ORG1">
+    <organization identifier="ORG1">
+      <title>Compromiso con el servicio público y la organización · Rol soporte o apoyo</title>
+      <item identifier="ITEM1" identifierref="RES1" isvisible="true">
+        <title>Compromiso con el servicio público y la organización · Rol soporte o apoyo</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RES1" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="index.html"/>
+      <file href="rubric.json"/>
+      <file href="css/styles.css"/>
+      <file href="scripts/scorm.global.js"/>
+      <file href="scripts/scorm12_api.js"/>
+      <file href="scripts/jspdf.global.js"/>
+      <file href="scripts/app.js"/>
+      <file href="media/Logo-JuntaAndalucia.jpg"/>
+    </resource>
+  </resources>
+</manifest>

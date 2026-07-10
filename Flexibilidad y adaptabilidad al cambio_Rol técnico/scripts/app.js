@@ -67,8 +67,8 @@ function computeScores(rubric, selections){
   });
   var quality = maxRaw > 0 ? (raw / maxRaw) : 0;
   var coverage = total > 0 ? (accredited / total) : 0;
-  var punt = Math.round(100 * quality * (0.5 + 0.5 * coverage));
-  punt = Math.max(0, Math.min(100, punt));
+  var punt = Math.round(maxRaw * quality * (0.5 + 0.5 * coverage));
+  punt = Math.max(0, Math.min(maxRaw, punt));
   var globalClass = classifyByRange(punt, (sc.classification_rules && sc.classification_rules.global) || []);
   return { raw: raw, maxRaw: maxRaw, answered: answered, total: total, accredited: accredited,
            quality: quality, coverage: coverage, punt: punt, globalClass: globalClass };
@@ -154,7 +154,8 @@ function escapeAttr(s){
     $("#rb-title").textContent        = rubric.rubric_title || "Rúbrica";
     $("#rb-rol").textContent          = rubric.rubric_rol || "";
     $("#rb-definition").textContent   = rubric.rubric_definition || "";
-    $("#rb-instructions").textContent = rubric.rubric_instructions || "";
+    // La frase de instrucciones va en negrita (requisito del cliente).
+    $("#rb-instructions").innerHTML   = "<strong>" + escapeHTML(rubric.rubric_instructions || "") + "</strong>";
     document.title = (rubric.rubric_title || "Rúbrica") + " · " + (rubric.rubric_rol || "");
   }
 
@@ -279,8 +280,8 @@ function escapeAttr(s){
       '</header>' +
       '<div class="result-hero">' +
         '<div class="result-figure" aria-live="polite">' +
-          '<div class="kpi"><span id="global-score">0</span><span class="kpi-unit" aria-hidden="true">/100</span>' +
-            '<span class="visually-hidden"> de 100 puntos</span></div>' +
+          '<div class="kpi"><span id="global-score">0</span><span class="kpi-unit" aria-hidden="true">/80</span>' +
+            '<span class="visually-hidden"> de 80 puntos</span></div>' +
           '<div class="muted">Puntuación global</div>' +
         '</div>' +
         '<div class="result-verdict" aria-live="polite">' +
@@ -451,7 +452,7 @@ function escapeAttr(s){
     var s = computeScores(rubric, sel);
     var ok = true;
     ok = SCORM12.setValue("cmi.core.score.min", "0") && ok;
-    ok = SCORM12.setValue("cmi.core.score.max", "100") && ok;
+    ok = SCORM12.setValue("cmi.core.score.max", "80") && ok;
     ok = SCORM12.setValue("cmi.core.score.raw", String(s.punt)) && ok;
     ok = SCORM12.setValue("cmi.core.lesson_status", "completed") && ok;
     ok = SCORM12.setValue("cmi.suspend_data",
@@ -641,14 +642,14 @@ function buildReportHTML(rubric, selections, scores, studentName, logoDataUrl){
     "<div class='brand'>" +
       (logoDataUrl ? "<img class='brand-logo' src='" + logoDataUrl + "' alt='Junta de Andalucía'/>" : "") +
       "<div>" +
-        "<p class='kicker'>" + escapeHTML(rubric.rubric_competency || "Mapa de Competencias · Junta de Andalucía") + "</p>" +
+        "<p class='kicker'>" + escapeHTML(rubric.rubric_competency || "Mapa de Competencias Básicas · Junta de Andalucía") + "</p>" +
         "<h1>" + escapeHTML(rubric.rubric_title || "Rúbrica") + "</h1>" +
         "<p class='rol'>" + escapeHTML(rubric.rubric_rol || "") + "</p>" +
       "</div>" +
     "</div>" +
     (rubric.rubric_definition ? "<p class='muted'>" + escapeHTML(rubric.rubric_definition) + "</p>" : "") +
     "<div class='meta'>" + meta.join("") + "</div>" +
-    "<div class='summary'><div class='kpi'>Puntuación global: " + scores.punt + "/100</div>" +
+    "<div class='summary'><div class='kpi'>Puntuación global: " + scores.punt + "/" + scores.maxRaw + "</div>" +
       "<p class='verdict'><strong>Nivel de competencia:</strong> " + escapeHTML(gc.label || "–") + "</p>" +
       (gc.description ? "<p class='muted'>" + escapeHTML(gc.description) + "</p>" : "") +
       "<p class='small muted'>Calidad " + Math.round(scores.quality * 100) + "% · " +
@@ -696,7 +697,7 @@ function buildReportPDF(JsPDF, rubric, selections, scores, studentName, logo){
     try{ doc.addImage(logo.data, "JPEG", M, y, logoW, logoH); textX = M + logoW + 6; }catch(e){ textX = M; }
   }
   var tw = PW - M - textX;
-  var kickLines = wrap(String(rubric.rubric_competency || "Mapa de Competencias · Junta de Andalucía").toUpperCase(), tw, 8, "bold");
+  var kickLines = wrap(String(rubric.rubric_competency || "Mapa de Competencias Básicas · Junta de Andalucía").toUpperCase(), tw, 8, "bold");
   var titleLines = wrap(String(rubric.rubric_title || "Rúbrica"), tw, 17, "bold");
   var rolLines = wrap(String(rubric.rubric_rol || ""), tw, 11, "bold");
   var hy = y + 3.2;
@@ -723,7 +724,7 @@ function buildReportPDF(JsPDF, rubric, selections, scores, studentName, logo){
   /* -- Cuadro resumen global -- */
   var gc = scores.globalClass || {};
   var boxPad = 5;
-  var kpiLines = wrap("Puntuación global: " + scores.punt + "/100", CW - 2 * boxPad, 15, "bold");
+  var kpiLines = wrap("Puntuación global: " + scores.punt + "/" + scores.maxRaw, CW - 2 * boxPad, 15, "bold");
   var verdictLines = wrap("Nivel de competencia: " + (gc.label || "–"), CW - 2 * boxPad, 10.5, "bold");
   var descLines = gc.description ? wrap(gc.description, CW - 2 * boxPad, 9.5, "normal") : [];
   var covLines = wrap("Calidad " + Math.round(scores.quality * 100) + "%   ·   Cobertura " +

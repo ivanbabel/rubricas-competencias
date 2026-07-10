@@ -1,0 +1,263 @@
+{
+    "rubric_competency":  "Mapa de Competencias Básicas. Competencia 1 · Junta de Andalucía",
+    "rubric_title":  "Compromiso con el servicio público y la organización",
+    "rubric_rol":  "Rol soporte o apoyo",
+    "rubric_definition":  "Definición de la competencia: Asumir como propios los principios y valores de la Junta de Andalucía, actuando de forma coherente y con respeto a los mismos. Implicarse activamente en la consecución de objetivos de su organización, mostrando profesionalidad, responsabilidad e integridad en sus actuaciones. Representar con sus acciones a la Junta de Andalucía ante terceros.",
+    "rubric_instructions":  "Valora en qué grado realizas cada una de las actuaciones de los 5 comportamientos observables.",
+    "rubric_puntuation":  "Grado 1: nunca o rara vez · Grado 2: alguna vez · Grado 3: habitualmente · Grado 4: siempre o casi siempre.",
+    "language":  "es-ES",
+    "version":  "2026-07-06",
+    "scale":  {
+                  "name":  "Grados",
+                  "levels":  [
+                                 {
+                                     "value":  1,
+                                     "label":  "Grado 1",
+                                     "description":  "Nunca, rara vez. (Sin competencia) / No aplicable a mi puesto."
+                                 },
+                                 {
+                                     "value":  2,
+                                     "label":  "Grado 2",
+                                     "description":  "Alguna vez, ocasionalmente. (Nivel básico)"
+                                 },
+                                 {
+                                     "value":  3,
+                                     "label":  "Grado 3",
+                                     "description":  "Habitualmente, con frecuencia. (Nivel medio)"
+                                 },
+                                 {
+                                     "value":  4,
+                                     "label":  "Grado 4",
+                                     "description":  "Siempre, casi siempre. (Nivel alto)"
+                                 }
+                             ]
+              },
+    "scoring":  {
+                    "points_per_level":  {
+                                             "1":  1,
+                                             "2":  2,
+                                             "3":  3,
+                                             "4":  4
+                                         },
+                    "max_points_per_behavior":  4,
+                    "max_points_per_area":  16,
+                    "accredited_min_grade":  3,
+                    "global_model":  {
+                                         "model":  "quality_coverage",
+                                         "max_raw":  80,
+                                         "total_behaviors":  20,
+                                         "formula":  "80 * (raw/max_raw) * (0.5 + 0.5 * coverage)"
+                                     },
+                    "classification_rules":  {
+                                                 "area":  [
+                                                              {
+                                                                  "min":  0,
+                                                                  "max":  6,
+                                                                  "label":  "Sin competencia",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  7,
+                                                                  "max":  9,
+                                                                  "label":  "Nivel básico",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  10,
+                                                                  "max":  12,
+                                                                  "label":  "Nivel medio",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  13,
+                                                                  "max":  16,
+                                                                  "label":  "Nivel alto",
+                                                                  "description":  ""
+                                                              }
+                                                          ],
+                                                 "global":  [
+                                                                {
+                                                                    "min":  0,
+                                                                    "max":  40,
+                                                                    "label":  "Sin competencia",
+                                                                    "description":  "No alcanzar el nivel mínimo esperado para el perfil de apoyo operativo. Mostrar desconocimiento o incumplimiento frecuente de normas, escasa responsabilidad o falta de implicación. Poner en riesgo la calidad del servicio o la imagen institucional."
+                                                                },
+                                                                {
+                                                                    "min":  41,
+                                                                    "max":  60,
+                                                                    "label":  "Nivel básico",
+                                                                    "description":  "Realizar sus tareas de forma aceptable, pero con frecuencia necesitar recordatorios, apoyo o supervisión. Mostrar actitudes correctas, pero su aplicación es irregular o limitada. Algunas áreas clave pueden estar poco desarrolladas o aplicadas de forma mecánica."
+                                                                },
+                                                                {
+                                                                    "min":  61,
+                                                                    "max":  70,
+                                                                    "label":  "Nivel medio",
+                                                                    "description":  "Demostrar un buen desempeño habitual, aunque con márgenes de mejora en algunas áreas. Conocer bien las normas, actuar con responsabilidad y tratar a la ciudadanía con respeto, pero puede requerir apoyo puntual o reforzar ciertos comportamientos para llegar a un nivel más completo."
+                                                                },
+                                                                {
+                                                                    "min":  71,
+                                                                    "max":  80,
+                                                                    "label":  "Nivel alto",
+                                                                    "description":  "Integrar de forma sólida y constante los valores del servicio público en su comportamiento, actuar con gran responsabilidad, profesionalidad y compromiso. Cumplir con los procedimientos, respetar la confidencialidad, y demostrar una actitud proactiva hacia la mejora y la calidad del servicio."
+                                                                }
+                                                            ]
+                                             }
+                },
+    "areas":  [
+                  {
+                      "id":  "co1",
+                      "index":  1,
+                      "title":  "Conocer y respetar los principios y valores de la Junta de Andalucía, actuando éticamente conforme a los mismos",
+                      "description":  "Descripción: Actuar en todo momento con ética pública, de acuerdo con los valores y principios de la Junta de Andalucía. Tener presente que se trabaja al servicio de la ciudadanía y con responsabilidad pública.",
+                      "evidencias":  "E n c u e s t a s d e s a t i s f a c c i ó n H o j a s d e r e c l a m a c i o n e s. R e u n i o n e s d e t r a b a j o. D e n u n c i a s. C o n s u l t a s. A t e n c i ó n p r e s e n c i a l o t e l e f ó n i c a. R e s o l u c i o n e s d e c o n c e s i ó n.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co1_a1",
+                                            "text":  "Actuar con responsabilidad, honestidad, transparencia y rendición de cuentas en todas las decisiones."
+                                        },
+                                        {
+                                            "id":  "co1_a2",
+                                            "text":  "Ofrecer un servicio imparcial, equitativo y objetivo, sin sesgos ni trato desigual o discriminatorio por alguna razón (género, origen, edad, discapacidad,...)"
+                                        },
+                                        {
+                                            "id":  "co1_a3",
+                                            "text":  "Desempeñar éticamente el trabajo con diligencia, lealtad y buena fe con la Junta de Andalucía."
+                                        },
+                                        {
+                                            "id":  "co1_a4",
+                                            "text":  "Comportarse de forma coherente con lo que se espera en una institución pública, contribuyendo a reforzar la imagen y los principios de la organización."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "Desconocer o no tener en cuenta los valores y principios del servicio público. Actuar de forma individualista, sin considerar el interés general ni la imagen de la organización.",
+                                                       "basico":  "Intentar seguir las normas y valores, aunque a veces necesitar recordatorios o aclaraciones. Tener una actitud correcta, pero no siempre ser consciente del impacto de sus acciones en lo público.",
+                                                       "medio":  "Conocer y respetar los valores y principios del servicio público. Actuar con responsabilidad y lealtad en su trabajo diario, mostrando compromiso con la organización.",
+                                                       "alto":  "Integrar activamente los valores públicos en su comportamiento. Ser ejemplo coherente de compromiso con el servicio público y contribuir a reforzar la imagen y los principios de la organización."
+                                                   }
+                  },
+                  {
+                      "id":  "co2",
+                      "index":  2,
+                      "title":  "Cumplir con las normas, procesos, procedimientos y tareas marcados por la organización",
+                      "description":  "Descripción: Se trata de seguir las normas internas que rigen la forma de trabajar en la organización, así como los procesos, procedimientos y tareas. Estas reglas están para garantizar el orden, la igualdad y el buen funcionamiento de los servicios.",
+                      "evidencias":  "E n c u e s t a s d e s a t i s f a c c i ó n H o j a s d e r e c l a m a c i o n e s. R e u n i o n e s d e t r a b a j o. D e n u n c i a s. C o n s u l t a s. A t e n c i ó n p r e s e n c i a l o t e l e f ó n i c a. P r e m i o s.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co2_a1",
+                                            "text":  "Aplicar las normas e instrucciones tal como se le han explicado, sin hacer cambios por su cuenta y consultando cuando tiene dudas antes de improvisar."
+                                        },
+                                        {
+                                            "id":  "co2_a2",
+                                            "text":  "Respetar los pasos marcados en procesos y procedimientos, realizando las tareas administrativas o de apoyo correspondientes."
+                                        },
+                                        {
+                                            "id":  "co2_a3",
+                                            "text":  "Realizar las tareas marcadas por la organización con eficacia y eficiencia, dentro de los tiempos establecidos."
+                                        },
+                                        {
+                                            "id":  "co2_a4",
+                                            "text":  "Ser referencia para otros compañeros y compañeras en el cumplimiento de normas, así como en la realización de procesos, procedimientos y tareas."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "Ignorar o incumplir las normas y procedimientos establecidos. Actuar de forma improvisada, lo que puede generar errores o desorganización en el servicio.",
+                                                       "basico":  "Conocer las normas, pero necesitar recordatorios para aplicarlas correctamente. A veces actuar sin seguir el procedimiento o hacerlo de forma incompleta.",
+                                                       "medio":  "Cumplir de forma constante con las normas y procesos establecidos. Realizar su trabajo siguiendo las instrucciones, lo que contribuye al buen funcionamiento del servicio.",
+                                                       "alto":  "Aplicar rigurosamente los procedimientos, procesos, normas y tares y promover su correcta aplicación. Seguir horarios y tiempos establecidos. Servir de referencia para otros compañeros y compañeras en el cumplimiento de normas."
+                                                   }
+                  },
+                  {
+                      "id":  "co3",
+                      "index":  3,
+                      "title":  "Asegurarse que su trabajo cumple con los estándares de calidad y plazos de realización establecidos",
+                      "description":  "Descripción: Implica realizar el trabajo con interés, de acuerdo con los estándares de calidad marcados y dentro de los tiempos establecidos. Es comprometerse con el buen hacer diario.",
+                      "evidencias":  "E n c u e s t a s d e s a t i s f a c c i ó n H o j a s d e r e c l a m a c i o n e s. R e u n i o n e s d e t r a b a j o. D e n u n c i a s. C o n s u l t a s. A t e n c i ó n p r e s e n c i a l o t e l e f ó n i c a. P r e m i o s.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co3_a1",
+                                            "text":  "Atender los detalles y estándares de calidad del trabajo realizado y no dejar tareas a medias, esforzándose porque el trabajo esté bien hecho."
+                                        },
+                                        {
+                                            "id":  "co3_a2",
+                                            "text":  "Seguir los horarios, tiempos y plazos establecidos para cada tarea."
+                                        },
+                                        {
+                                            "id":  "co3_a3",
+                                            "text":  "Revisar su trabajo antes de darlo por terminado, responsabilizándose de sus tareas y respondiendo ante posibles errores."
+                                        },
+                                        {
+                                            "id":  "co3_a4",
+                                            "text":  "Preocuparse por mejorar y hacer su trabajo cada día un poco mejor, anticipándose a los problemas si es posible y contribuyendo al buen funcionamiento del servicio público."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "Realizar sus tareas de forma descuidada o incompleta. No asumir la responsabilidad de su trabajo y necesitar supervisión constante para cumplir con lo mínimo exigido.",
+                                                       "basico":  "Cumplir con sus funciones, aunque puede cometer errores por falta de atención o planificación. Requerir apoyo para mantener un nivel de calidad constante.",
+                                                       "medio":  "Realizar su trabajo con cuidado, dentro de los plazos establecidos y con un nivel de calidad adecuado. Responsabilizarse de sus tareas y responder ante posibles errores.",
+                                                       "alto":  "Ejecutar su trabajo con alto nivel de responsabilidad, compromiso y calidad. Anticiparse a los problemas, cuidar los detalles y contribuir al buen funcionamiento del servicio público."
+                                                   }
+                  },
+                  {
+                      "id":  "co4",
+                      "index":  4,
+                      "title":  "No trasladar problemas de la organización a la ciudadanía o personas usuarias",
+                      "description":  "Descripción: Se refiere a cómo nos relacionamos con las personas usuarias o la ciudadanía. Implica mantener una actitud profesional, incluso cuando hay dificultades internas que nunca deben ser trasladadas.",
+                      "evidencias":  "E n c u e s t a s d e s a t i s f a c c i ó n H o j a s d e r e c l a m a c i o n e s. R e u n i o n e s d e t r a b a j o. D e n u n c i a s. C o n s u l t a s. A t e n c i ó n p r e s e n c i a l o t e l e f ó n i c a. R e s o l u c i o n e s d e c o n c e s i ó n.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co4_a1",
+                                            "text":  "Mantener una actitud amable y respetuosa con la ciudadanía o personas usuarias del servicio, aún en situaciones difíciles por falta de tiempo, recursos, o cualquier otro motivo."
+                                        },
+                                        {
+                                            "id":  "co4_a2",
+                                            "text":  "Resolver dudas o dificultades de forma tranquila y respetuosa, y derivar con claridad y educación si no puede resolverse algo."
+                                        },
+                                        {
+                                            "id":  "co4_a3",
+                                            "text":  "Afrontar los problemas y dificultades de la organización de manera interna y discreta, sin que se vea afectada la atención a la ciudadanía o personas usuarias."
+                                        },
+                                        {
+                                            "id":  "co4_a4",
+                                            "text":  "Cuidar la calidad del servicio y contribuir a una atención ciudadana excelente, sin trasladar problemas de la organización en situaciones difíciles."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "Trasladar problemas de la organización a la ciudadanía o personas usuarias. Transmitir una imagen negativa del servicio público.",
+                                                       "basico":  "Intentar mantener una atención correcta, aunque a veces muestra falta de empatía o no responde con eficacia. Necesita supervisión para cumplir con sus responsabilidades.",
+                                                       "medio":  "Atender con respeto, amabilidad y empatía sin trasladar problemas de la organización a la ciudadanía o personas usuarias. Cumplir con sus funciones de forma responsable y representar adecuadamente a la organización en el trato con la ciudadanía.",
+                                                       "alto":  "Destacar por su actitud profesional y respetuosa. Cuidar la calidad del servicio y contribuir a una atención ciudadana excelente, sin trasladar problemas de la organización en situaciones difíciles."
+                                                   }
+                  },
+                  {
+                      "id":  "co5",
+                      "index":  5,
+                      "title":  "Respetar la confidencialidad de los datos y asuntos que se tratan",
+                      "description":  "Descripción: Supone manejar la información confidencial con profesionalidad, aplicando correctamente los protocolos de seguridad y protección de datos. Incluye custodiar con responsabilidad los documentos y prevenir cualquier uso indebido o filtración de información técnica o sensible.",
+                      "evidencias":  "E n c u e s t a s d e s a t i s f a c c i ó n H o j a s d e r e c l a m a c i o n e s. R e u n i o n e s d e t r a b a j o. D e n u n c i a s. C o n s u l t a s. A t e n c i ó n p r e s e n c i a l o t e l e f ó n i c a. P r e m i o s.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co5_a1",
+                                            "text":  "No comentar información confidencial con personas no autorizadas."
+                                        },
+                                        {
+                                            "id":  "co5_a2",
+                                            "text":  "Guardar y custodiar correctamente los documentos o datos personales."
+                                        },
+                                        {
+                                            "id":  "co5_a3",
+                                            "text":  "Hablar con discreción cuando se tratan temas internos o sensibles, y consultar antes de actuar si se tienen dudas sobre qué se puede compartir."
+                                        },
+                                        {
+                                            "id":  "co5_a4",
+                                            "text":  "Conocer los protocolos e instrucciones para cumplir las normas de protección de datos en su puesto, respetando la confidencialidad y contribuyendo a crear un entorno seguro y profesional."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "Tratar la información sin precaución. Comentar asuntos internos o datos sensibles sin valorar su confidencialidad, lo que puede poner en riesgo a personas o a la organización.",
+                                                       "basico":  "Ser consciente de la importancia de la confidencialidad, pero a veces necesitar recordatorios. Cometer errores por descuido o desconocimiento.",
+                                                       "medio":  "Manejar correctamente la información sensible. Aplicar las normas básicas de confidencialidad y actuar con discreción en el tratamiento de documentos o conversaciones.",
+                                                       "alto":  "Tener rigurosidad en la protección de la información. Respetar plenamente la confidencialidad y servir de modelo para sus compañeros/as. Contribuir a crear un entorno seguro y profesional al conocer los protocolos e instrucciones para cumplir las normas de protección de datos en su puesto."
+                                                   }
+                  }
+              ]
+}

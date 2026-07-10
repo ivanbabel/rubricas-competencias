@@ -1,8 +1,8 @@
 {
-    "rubric_competency":  "Mapa de Competencias · Junta de Andalucía",
+    "rubric_competency":  "Mapa de Competencias Básicas. Competencia 3 · Junta de Andalucía",
     "rubric_title":  "Mejora continua",
     "rubric_rol":  "Rol directivo",
-    "rubric_definition":  "Buscar mejoras permanentemente, aportando ideas y sugerencias. Aplicar nuevas informaciones, sistemas y/o métodos de trabajo dirigidas a la mejora de la eficacia y eficiencia de los resultados en función de las posibilidades de la Organización.",
+    "rubric_definition":  "Definición de la competencia: Buscar mejoras permanentemente, aportando ideas y sugerencias. Aplicar nuevas informaciones, sistemas y/o métodos de trabajo dirigidas a la mejora de la eficacia y eficiencia de los resultados en función de las posibilidades de la Organización.",
     "rubric_instructions":  "Valora en qué grado realizas cada una de las actuaciones de los 5 comportamientos observables.",
     "rubric_puntuation":  "Grado 1: nunca o rara vez · Grado 2: alguna vez · Grado 3: habitualmente · Grado 4: siempre o casi siempre.",
     "language":  "es-ES",
@@ -46,7 +46,7 @@
                                          "model":  "quality_coverage",
                                          "max_raw":  80,
                                          "total_behaviors":  20,
-                                         "formula":  "100 * (raw/max_raw) * (0.5 + 0.5 * coverage)"
+                                         "formula":  "80 * (raw/max_raw) * (0.5 + 0.5 * coverage)"
                                      },
                     "classification_rules":  {
                                                  "area":  [
@@ -78,25 +78,25 @@
                                                  "global":  [
                                                                 {
                                                                     "min":  0,
-                                                                    "max":  49,
+                                                                    "max":  40,
                                                                     "label":  "Sin competencia",
                                                                     "description":  "Tener resistencia al cambio y a la mejora continua profesional. No liderar la aplicación de propuestas de mejora y limitarse a supervisar tareas sin buscar optimización ni mejora continua."
                                                                 },
                                                                 {
-                                                                    "min":  50,
-                                                                    "max":  69,
+                                                                    "min":  41,
+                                                                    "max":  60,
                                                                     "label":  "Nivel básico",
                                                                     "description":  "Implicarse en la mejora continua de forma puntual o dependiente del entorno. Detectar dificultades, aceptar sugerencias y liderar mejoras con cierto apoyo o seguimiento."
                                                                 },
                                                                 {
-                                                                    "min":  70,
-                                                                    "max":  89,
+                                                                    "min":  61,
+                                                                    "max":  70,
                                                                     "label":  "Nivel medio",
                                                                     "description":  "Tener un liderazgo participativo con el equipo en la mejora continua, iniciando acciones, impulsando nuevos método y ayudando, reconociendo y motivando a las personas del equipo para que apliquen las mejoras establecidas."
                                                                 },
                                                                 {
-                                                                    "min":  90,
-                                                                    "max":  100,
+                                                                    "min":  71,
+                                                                    "max":  80,
                                                                     "label":  "Nivel alto",
                                                                     "description":  "Actuar con una visión crítica, proactiva y estratégica en la mejora de procesos, métodos y herramientas. Implicar al equipo en la mejora continua y liderarlo emocionalmente, Hacer seguimiento de las mejoras aplicadas para comprobar si funcionan en la práctica."
                                                                 }
@@ -108,7 +108,7 @@
                       "id":  "co1",
                       "index":  1,
                       "title":  "Iniciar acciones que permitan anticiparse a las necesidades de la ciudadanía o personas usuarias para mejorar la calidad de los servicios",
-                      "description":  "Capacidad para mejorar la calidad de los servicios a partir del conocimiento previo de las necesidades de la ciudadanía o personas usuarias, para anticiparse con acciones concretas.",
+                      "description":  "Descripción: Capacidad para mejorar la calidad de los servicios a partir del conocimiento previo de las necesidades de la ciudadanía o personas usuarias, para anticiparse con acciones concretas.",
                       "evidencias":  "R e u n i o n e s d e t r a b a j o. P l a n e s d e m e j o r a. Q u e j a s y r e c l a m a c i o n e s B u z ó n d e s u g e r e n c i a s. E n c u e s t a s d e s a t i s f a c c i ó n. P l a t a f o r m a s d i g i t a l e s.",
                       "behaviors":  [
                                         {
@@ -139,7 +139,7 @@
                       "id":  "co2",
                       "index":  2,
                       "title":  "Impulsar y dirigir nuevos métodos, procesos, procedimientos y acciones para mejorar la eficacia y eficiencia de los resultados.",
-                      "description":  "Se refiere a la capacidad de mejorar la eficacia y la eficiencia de los resultados a partir de la implantación de nuevos métodos, procesos, procedimientos y acciones.",
+                      "description":  "Descripción: Se refiere a la capacidad de mejorar la eficacia y la eficiencia de los resultados a partir de la implantación de nuevos métodos, procesos, procedimientos y acciones.",
                       "evidencias":  "R e u n i o n e s d e t r a b a j o. P l a n e s d e m e j o r a. P r o p u e s t a s d e m e j o r a. C o m u n i d a d e s d e p r á c t i c a.",
                       "behaviors":  [
                                         {
@@ -170,7 +170,7 @@
                       "id":  "co3",
                       "index":  3,
                       "title":  "Generar e implementar estrategias y herramientas para incrementar la mejora continua de la organización",
-                      "description":  "Se refiere a la capacidad de aumentar la mejora continua de la organización a partir del uso de estrategias y herramientas de gestión del cambio basadas en el ciclo PDCA (Planificar, Hacer, Verificar, Actuar).",
+                      "description":  "Descripción: Se refiere a la capacidad de aumentar la mejora continua de la organización a partir del uso de estrategias y herramientas de gestión del cambio basadas en el ciclo PDCA (Planificar, Hacer, Verificar, Actuar).",
                       "evidencias":  "R e u n i o n e s d e t r a b a j o. P l a n e s d e m e j o r a. I n f o r m e s d e a n á l i s i s d e p r o b l e m a s y o p o r t u n i d a d e s. I n f o r m e s d e a n á l i s i s d e r e s u l t a d o s I n f o r m e s d e t o m a d e d e c i s i o n e s",
                       "behaviors":  [
                                         {
@@ -201,7 +201,7 @@
                       "id":  "co4",
                       "index":  4,
                       "title":  "Alentar y reconocer las iniciativas y propuestas realizadas por las personas colaboradoras",
-                      "description":  "Se refiere a las actuaciones dirigidas a reconocer las propuestas e iniciativas de las personas colaboradoras de manera efectiva, para fomentar un entorno donde la mejora continua y la proactividad se conviertan en la norma.",
+                      "description":  "Descripción: Se refiere a las actuaciones dirigidas a reconocer las propuestas e iniciativas de las personas colaboradoras de manera efectiva, para fomentar un entorno donde la mejora continua y la proactividad se conviertan en la norma.",
                       "evidencias":  "P l a n e s d e m e j o r a. R e c o n o c i m i e n t o s v e r b a l e s. R e c o n o c i m i e n t o s e s c r i t o s. R e c o m p e n s a s.",
                       "behaviors":  [
                                         {
@@ -232,7 +232,7 @@
                       "id":  "co5",
                       "index":  5,
                       "title":  "Liderar la aplicación de las propuestas de mejora establecidas",
-                      "description":  "Impulsa, dirige y lidera la puesta en práctica de los cambios que se acuerdan para hacer mejor el trabajo. Compromiso tanto en el ámbito individual como colectivo.",
+                      "description":  "Descripción: Impulsa, dirige y lidera la puesta en práctica de los cambios que se acuerdan para hacer mejor el trabajo. Compromiso tanto en el ámbito individual como colectivo.",
                       "evidencias":  "R e u n i o n e s d e t r a b a j o. P l a n e s d e m e j o r a. P r o p u e s t a s d e m e j o r a. C o m u n i d a d e s d e p r á c t i c a.",
                       "behaviors":  [
                                         {

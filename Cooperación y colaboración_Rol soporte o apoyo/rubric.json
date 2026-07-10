@@ -1,0 +1,263 @@
+{
+    "rubric_competency":  "Mapa de Competencias Básicas. Competencia 5 · Junta de Andalucía",
+    "rubric_title":  "Cooperación y colaboración",
+    "rubric_rol":  "Rol soporte o apoyo",
+    "rubric_definition":  "Definición de la competencia: Trabajar de forma abierta y colaborativa, tanto con el grupo de trabajo propio como con otras personas profesionales, proveedoras y/o usuarias, para alcanzar objetivos comunes, generando y manteniendo relaciones de confianza.",
+    "rubric_instructions":  "Valora en qué grado realizas cada una de las actuaciones de los 5 comportamientos observables.",
+    "rubric_puntuation":  "Grado 1: nunca o rara vez · Grado 2: alguna vez · Grado 3: habitualmente · Grado 4: siempre o casi siempre.",
+    "language":  "es-ES",
+    "version":  "2026-07-06",
+    "scale":  {
+                  "name":  "Grados",
+                  "levels":  [
+                                 {
+                                     "value":  1,
+                                     "label":  "Grado 1",
+                                     "description":  "Nunca, rara vez. (Sin competencia) / No aplicable a mi puesto."
+                                 },
+                                 {
+                                     "value":  2,
+                                     "label":  "Grado 2",
+                                     "description":  "Alguna vez, ocasionalmente. (Nivel básico)"
+                                 },
+                                 {
+                                     "value":  3,
+                                     "label":  "Grado 3",
+                                     "description":  "Habitualmente, con frecuencia. (Nivel medio)"
+                                 },
+                                 {
+                                     "value":  4,
+                                     "label":  "Grado 4",
+                                     "description":  "Siempre, casi siempre. (Nivel alto)"
+                                 }
+                             ]
+              },
+    "scoring":  {
+                    "points_per_level":  {
+                                             "1":  1,
+                                             "2":  2,
+                                             "3":  3,
+                                             "4":  4
+                                         },
+                    "max_points_per_behavior":  4,
+                    "max_points_per_area":  16,
+                    "accredited_min_grade":  3,
+                    "global_model":  {
+                                         "model":  "quality_coverage",
+                                         "max_raw":  80,
+                                         "total_behaviors":  20,
+                                         "formula":  "80 * (raw/max_raw) * (0.5 + 0.5 * coverage)"
+                                     },
+                    "classification_rules":  {
+                                                 "area":  [
+                                                              {
+                                                                  "min":  0,
+                                                                  "max":  6,
+                                                                  "label":  "Sin competencia",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  7,
+                                                                  "max":  9,
+                                                                  "label":  "Nivel básico",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  10,
+                                                                  "max":  12,
+                                                                  "label":  "Nivel medio",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  13,
+                                                                  "max":  16,
+                                                                  "label":  "Nivel alto",
+                                                                  "description":  ""
+                                                              }
+                                                          ],
+                                                 "global":  [
+                                                                {
+                                                                    "min":  0,
+                                                                    "max":  40,
+                                                                    "label":  "Sin competencia",
+                                                                    "description":  "Mostrar desinterés por el trabajo en equipo y evitar cooperar y colaborar con otras personas priorizando únicamente sus tareas, sin considerar las necesidades del equipo. No compartir información ni ayudar a resolver problemas colectivos."
+                                                                },
+                                                                {
+                                                                    "min":  41,
+                                                                    "max":  60,
+                                                                    "label":  "Nivel básico",
+                                                                    "description":  "Participar en actividades grupales solo cuando se le solicita expresamente, mantener un trato respetuoso, pero con escasa iniciativa para colaborar de forma activa. Contribuir de forma puntual y no asumir responsabilidades compartidas."
+                                                                },
+                                                                {
+                                                                    "min":  61,
+                                                                    "max":  70,
+                                                                    "label":  "Nivel medio",
+                                                                    "description":  "Cooperar activamente con sus compañeros y compañeras, compartiendo información de utilidad y participando de forma comprometida en las tareas grupales que se le requieren."
+                                                                },
+                                                                {
+                                                                    "min":  71,
+                                                                    "max":  80,
+                                                                    "label":  "Nivel alto",
+                                                                    "description":  "Colaborar activamente con sus compañeros y compañeras, compartiendo información de utilidad y participando de forma comprometida en las tareas grupales que se le requieren , proponiendo soluciones conjuntas y contribuyendo de forma constante al logro de los objetivos colectivos."
+                                                                }
+                                                            ]
+                                             }
+                },
+    "areas":  [
+                  {
+                      "id":  "co1",
+                      "index":  1,
+                      "title":  "Mantener buenas relaciones interpersonales con el equipo de trabajo",
+                      "description":  "Descripción: Consiste en expresar opiniones e ideas con claridad y respeto, y estar dispuesto a escuchar y a ayudar a los demás miembros del equipo, incluso cuando hay diferencias, favoreciendo un clima de diálogo y buen ambiente.",
+                      "evidencias":  "A c t a s. A c t i v i d a d e s i n f o r m a l e s A s e s o r a m i e n t o s. R e c o n o c i m i e n t o s.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co1_a1",
+                                            "text":  "Tener una comunicación con todas las personas del equipo constante y fluida, escuchando activamente sin interrumpir."
+                                        },
+                                        {
+                                            "id":  "co1_a2",
+                                            "text":  "Dirigirse a las personas con educación y respeto, usando un tono adecuado, y tratarlas con cortesía y amabilidad evitando malas formas."
+                                        },
+                                        {
+                                            "id":  "co1_a3",
+                                            "text":  "Valorar y reconocer las aportaciones de otras personas, evitando críticas destructivas."
+                                        },
+                                        {
+                                            "id":  "co1_a4",
+                                            "text":  "Actuar buscando siempre que prime el consenso, la comunicación abierta, el buen ambiente de trabajo y las buenas relaciones interpersonales en el equipo de trabajo."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "No escuchar activamente ni respetar las opiniones. Comunicarse con brusquedad o falta de claridad y no tener buenas relaciones con parte o todo el equipo.",
+                                                       "basico":  "Intentar comunicarse de forma respetuosa, pero costarle expresarse con claridad o escuchar con atención y a veces tener un trato brusco.",
+                                                       "medio":  "Comunicarse con claridad y respeto. Escuchar, compartir ideas y contribuir a un clima de diálogo positivo manteniendo buenas relaciones interpersonales.",
+                                                       "alto":  "Promover una comunicación abierta. Escuchar activamente, tratar con educación, ayudar a resolver malentendidos y mantener buenas relaciones interpersonales con todo el equipo."
+                                                   }
+                  },
+                  {
+                      "id":  "co2",
+                      "index":  2,
+                      "title":  "Solicitar ayuda de otras personas con las que trabaja cuando la necesita",
+                      "description":  "Descripción: Consiste en cooperar de forma activa con el equipo y tener disposición para pedir ayuda cuando se necesita, promoviendo una red de apoyo profesional basada en la confianza y la reciprocidad.",
+                      "evidencias":  "I n f o r m e s. P r e s e n t a c i o n e s. A c t a s. R e c o n o c i m i e n t o s. T u t o r í a s. A s e s o r a m i e n t o s. R e s o l u c i ó n d e c o n s u l t a s.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co2_a1",
+                                            "text":  "Solicitar ayuda con normalidad y naturalidad cuando necesita alguna tarea o recurso para lograr los objetivos."
+                                        },
+                                        {
+                                            "id":  "co2_a2",
+                                            "text":  "Recibir experiencias, conocimientos, herramientas, recursos o referencias útiles de otras personas, para que se logren los objetivos del equipo o unidad."
+                                        },
+                                        {
+                                            "id":  "co2_a3",
+                                            "text":  "Agradecer cuando se recibe ayuda."
+                                        },
+                                        {
+                                            "id":  "co2_a4",
+                                            "text":  "Buscar soluciones conjuntas cuando hay carga de trabajo compartida."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "No solicitar ayuda a otros compañeros y compañeras cuando la necesita. Trabajar de forma aislada o desentendida.",
+                                                       "basico":  "Solicitar ayuda en ocasiones, pero costarle recibir colaboración.",
+                                                       "medio":  "Solicitar ayuda con normalidad y naturalidad a otras personas con las que trabaja. Mostrar agradecimiento.",
+                                                       "alto":  "Solicitar ayuda con normalidad y naturalidad a otras personas con las que trabaja, mostrar agradecimiento cuando la recibe y buscar soluciones conjuntas cuando hay carga de trabajo compartida."
+                                                   }
+                  },
+                  {
+                      "id":  "co3",
+                      "index":  3,
+                      "title":  "Ofrecer ayuda a otras personas con las que trabaja cuando la necesitan",
+                      "description":  "Descripción: Consiste en cooperar de forma activa con el equipo y tener disposición para ofrecer ayuda cuando se necesita, promoviendo una red de apoyo profesional basada en la confianza y la reciprocidad.",
+                      "evidencias":  "I n f o r m e s. P r e s e n t a c i o n e s. A c t a s. R e c o n o c i m i e n t o s. T u t o r í a s. A s e s o r a m i e n t o s. R e s o l u c i ó n d e c o n s u l t a s.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co3_a1",
+                                            "text":  "Prestar apoyo o asesoramiento en tareas específicas, cuando resulta necesario, y con normalidad y naturalidad."
+                                        },
+                                        {
+                                            "id":  "co3_a2",
+                                            "text":  "Compartir experiencias, conocimientos, herramientas, recursos o referencias útiles propias para que se logren los objetivos del equipo o unidad."
+                                        },
+                                        {
+                                            "id":  "co3_a3",
+                                            "text":  "Responder con buena actitud y disponibilidad cuando alguien le pide colaboración."
+                                        },
+                                        {
+                                            "id":  "co3_a4",
+                                            "text":  "Detectar cuándo alguien necesita ayuda y ofrecerla sin que se la pidan, favoreciendo el trabajo conjunto."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "No ofrecer ayuda ni cooperar con otros y otras profesionales. Evitar ayudar o compartir conocimiento.",
+                                                       "basico":  "Ofrecer ayuda cuando se lo piden, pero de forma puntual o limitada. No soler compartir sus recursos o aprendizajes.",
+                                                       "medio":  "Ofrecer ayuda con naturalidad. Colaborar de forma activa y con buena disposición cuando se necesita.",
+                                                       "alto":  "Tener una actitud claramente colaboradora. Detectar cuándo alguien necesita apoyo y ofrecerlo sin que se lo pidan. Favorecer el trabajo conjunto."
+                                                   }
+                  },
+                  {
+                      "id":  "co4",
+                      "index":  4,
+                      "title":  "Respetar las opiniones y el comportamiento de las otras personas, aunque sean distintos a los propios",
+                      "description":  "Descripción: Implica saber manejar desacuerdos o tensiones dentro del equipo o con otras áreas de manera respetuosa, buscando soluciones comunes y manteniendo una actitud constructiva.",
+                      "evidencias":  "V e r s i o n e s r e v i s a d a s. M e j o r a s i m p l a n t a d a s. I n f o r m e s d e s e g u i m i e n t o. A c t a s. I n f o r m e s c o m p a r a t i v o s. P r o p u e s t a s c o n s e n s u a d a s.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co4_a1",
+                                            "text":  "Demostrar interés por las personas, lo que piensan y lo que hacen, mostrándose accesible y construyendo relaciones interpersonales sólidas."
+                                        },
+                                        {
+                                            "id":  "co4_a2",
+                                            "text":  "Participar en la búsqueda de soluciones compartidas intermedias ante discrepancias, opiniones, o puntos de vista opuestos."
+                                        },
+                                        {
+                                            "id":  "co4_a3",
+                                            "text":  "Escuchar activamente y sin interrumpir en situaciones de tensión, evitando posiciones defensivas y valorando todos los argumentos."
+                                        },
+                                        {
+                                            "id":  "co4_a4",
+                                            "text":  "Introducir mejoras en su trabajo a partir de las opiniones y comportamientos de otras personas."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "Evitar o negar los conflictos, generando bloqueos al no respetar opiniones diferentes a la propia. Adoptar una actitud defensiva o rígida.",
+                                                       "basico":  "Reconocer los conflictos, pero costarle abordarlos. Intentar respetar opiniones diferentes, pero poder necesitar ayuda externa para gestionar las diferencias.",
+                                                       "medio":  "Enfrentar los conflictos con serenidad y respetar opiniones y comportamientos diferentes al propio.",
+                                                       "alto":  "Enfrentar los conflictos con serenidad y respetar opiniones y comportamientos diferentes al propio, siendo capaz de cambiar su trabajo a partir de dichas opiniones y comportamientos."
+                                                   }
+                  },
+                  {
+                      "id":  "co5",
+                      "index":  5,
+                      "title":  "Colaborar activamente con otras personas para alcanzar objetivos comunes",
+                      "description":  "Descripción: Se refiere a coordinar su trabajo con los objetivos del grupo, comprometiéndose con los resultados globales y actuando colaborativamente de forma alineada con las metas compartidas.",
+                      "evidencias":  "I n f o r m e s. P r e s e n t a c i o n e s. A c t a s. R e c o n o c i m i e n t o s. T u t o r í a s. A s e s o r a m i e n t o s. R e s o l u c i ó n d e c o n s u l t a s.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co5_a1",
+                                            "text":  "Aportar ideas en reuniones y espacios grupales."
+                                        },
+                                        {
+                                            "id":  "co5_a2",
+                                            "text":  "Adaptarse al ritmo y estilo de trabajo establecido para lograr los objetivos comunes, cumpliendo activamente con las tareas que le corresponden."
+                                        },
+                                        {
+                                            "id":  "co5_a3",
+                                            "text":  "Participar en la toma de decisiones de manera conjunta, en la que cada persona tiene voz y voto."
+                                        },
+                                        {
+                                            "id":  "co5_a4",
+                                            "text":  "Compartir objetivos, responsabilidades y propiedad del trabajo con el resto del equipo, con implicación, sentido de pertenencia, propósito común y responsabilidad compartida."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "Evitar trabajar con otras personas. No participar en las tareas colectivas o hacerlo de forma pasiva.",
+                                                       "basico":  "Colaborar cuando se le indica, aunque necesita guía o motivación externa. Su participación es irregular.",
+                                                       "medio":  "Colaborar habitualmente con su equipo. Aportar al trabajo común, adaptarse a las dinámicas del grupo y participar en la toma de decisiones.",
+                                                       "alto":  "Ser una persona activa y positiva en el trabajo en equipo. Favorecer el clima colaborativo, tener sentido de pertenencia y apoyar a compañeros y compañeras en la responsabilidad compartida."
+                                                   }
+                  }
+              ]
+}

@@ -1,0 +1,263 @@
+{
+    "rubric_competency":  "Mapa de Competencias Básicas. Competencia 3 · Junta de Andalucía",
+    "rubric_title":  "Mejora continua",
+    "rubric_rol":  "Rol soporte o apoyo",
+    "rubric_definition":  "Definición de la competencia: Buscar mejoras permanentemente, aportando ideas y sugerencias. Aplicar nuevas informaciones, sistemas y/o métodos de trabajo dirigidas a la mejora de la eficacia y eficiencia de los resultados en función de las posibilidades de la Organización.",
+    "rubric_instructions":  "Valora en qué grado realizas cada una de las actuaciones de los 5 comportamientos observables.",
+    "rubric_puntuation":  "Grado 1: nunca o rara vez · Grado 2: alguna vez · Grado 3: habitualmente · Grado 4: siempre o casi siempre.",
+    "language":  "es-ES",
+    "version":  "2026-07-06",
+    "scale":  {
+                  "name":  "Grados",
+                  "levels":  [
+                                 {
+                                     "value":  1,
+                                     "label":  "Grado 1",
+                                     "description":  "Nunca, rara vez. (Sin competencia) / No aplicable a mi puesto."
+                                 },
+                                 {
+                                     "value":  2,
+                                     "label":  "Grado 2",
+                                     "description":  "Alguna vez, ocasionalmente. (Nivel básico)"
+                                 },
+                                 {
+                                     "value":  3,
+                                     "label":  "Grado 3",
+                                     "description":  "Habitualmente, con frecuencia. (Nivel medio)"
+                                 },
+                                 {
+                                     "value":  4,
+                                     "label":  "Grado 4",
+                                     "description":  "Siempre, casi siempre. (Nivel alto)"
+                                 }
+                             ]
+              },
+    "scoring":  {
+                    "points_per_level":  {
+                                             "1":  1,
+                                             "2":  2,
+                                             "3":  3,
+                                             "4":  4
+                                         },
+                    "max_points_per_behavior":  4,
+                    "max_points_per_area":  16,
+                    "accredited_min_grade":  3,
+                    "global_model":  {
+                                         "model":  "quality_coverage",
+                                         "max_raw":  80,
+                                         "total_behaviors":  20,
+                                         "formula":  "80 * (raw/max_raw) * (0.5 + 0.5 * coverage)"
+                                     },
+                    "classification_rules":  {
+                                                 "area":  [
+                                                              {
+                                                                  "min":  0,
+                                                                  "max":  6,
+                                                                  "label":  "Sin competencia",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  7,
+                                                                  "max":  9,
+                                                                  "label":  "Nivel básico",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  10,
+                                                                  "max":  12,
+                                                                  "label":  "Nivel medio",
+                                                                  "description":  ""
+                                                              },
+                                                              {
+                                                                  "min":  13,
+                                                                  "max":  16,
+                                                                  "label":  "Nivel alto",
+                                                                  "description":  ""
+                                                              }
+                                                          ],
+                                                 "global":  [
+                                                                {
+                                                                    "min":  0,
+                                                                    "max":  40,
+                                                                    "label":  "Sin competencia",
+                                                                    "description":  "Tener un desempeño muy limitado en relación con la mejora continua, no proponer ideas, evitar o resistirse los cambios y repetir errores sin buscar soluciones. Con su actitud puede ralentizar el avance del equipo o bloquear iniciativas de mejora."
+                                                                },
+                                                                {
+                                                                    "min":  41,
+                                                                    "max":  60,
+                                                                    "label":  "Nivel básico",
+                                                                    "description":  "Mostrar disposición al cambio y al aprendizaje, pero de forma irregular o dependiente del entorno. Aportar ideas esporádicas o aplicar mejoras si se le indican, pero costarle analizarlas o mantenerlas en el tiempo. Necesitar seguimiento para incorporar hábitos de mejora personal y profesional de forma estable."
+                                                                },
+                                                                {
+                                                                    "min":  61,
+                                                                    "max":  70,
+                                                                    "label":  "Nivel medio",
+                                                                    "description":  "Desempeñar su trabajo con mejora continua de formas constante y responsable. Proponer sugerencias útiles, aplicar cambios acordados y gestionar bien su tiempo, pero poder necesitar impulso o guía en algunos momentos. Adaptarse con facilidad y colaborar activamente, pero aún no liderar procesos de mejora dentro del equipo."
+                                                                },
+                                                                {
+                                                                    "min":  71,
+                                                                    "max":  80,
+                                                                    "label":  "Nivel alto",
+                                                                    "description":  "Mostrar una actitud proactiva, reflexiva y constante hacia la mejora de su trabajo y del equipo. Proponer y aplicar mejoras con autonomía, analizar su forma de trabajar y ayudar a otros a adaptarse a los cambios. Ser una figura dinamizadora dentro del equipo en cuanto a eficiencia, aprendizaje y adaptación positiva al cambio."
+                                                                }
+                                                            ]
+                                             }
+                },
+    "areas":  [
+                  {
+                      "id":  "co1",
+                      "index":  1,
+                      "title":  "Revisar las prácticas de trabajo para proponer mejoras",
+                      "description":  "Descripción: Se refiere a la capacidad de mirar cómo se hacen las tareas y detectar aspectos que se pueden mejorar. Es el primer paso para avanzar y trabajar mejor.",
+                      "evidencias":  "R e u n i o n e s d e t r a b a j o. P l a n e s d e m e j o r a. P r o p u e s t a s d e m e j o r a. C o m u n i d a d e s d e p r á c t i c a.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co1_a1",
+                                            "text":  "Observar con atención los pasos que siguen en el desempeño de una tarea y reflexionar sobre posibles errores, dificultades o problemas."
+                                        },
+                                        {
+                                            "id":  "co1_a2",
+                                            "text":  "Darse cuenta de cuándo algo no funciona bien y comunicarlo para poder mejorarlo."
+                                        },
+                                        {
+                                            "id":  "co1_a3",
+                                            "text":  "Proponer mejoras basadas en lo que se detecta."
+                                        },
+                                        {
+                                            "id":  "co1_a4",
+                                            "text":  "Ayudar a que el equipo tome conciencia de posibles errores o ineficiencias."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "Realizar sus tareas sin reflexionar sobre posibles errores o dificultades. No detectar problemas en su actividad diaria.",
+                                                       "basico":  "Reconocer algunos fallos o dificultades, pero no saber analizarlos ni extraer aprendizajes.",
+                                                       "medio":  "Identificar problemas en su trabajo diario y reflexionar sobre cómo mejorar su forma de actuar.",
+                                                       "alto":  "Observar con detalle su trabajo y proponer mejoras basadas en lo que detecta. Ayudar a que el equipo tome conciencia de posibles errores o ineficiencias."
+                                                   }
+                  },
+                  {
+                      "id":  "co2",
+                      "index":  2,
+                      "title":  "Aportar sugerencias que permitan simplificar el trabajo",
+                      "description":  "Descripción: Aporta ideas o propuestas para mejorar procesos, simplificar tareas o facilitar el trabajo propio y el de otras personas.",
+                      "evidencias":  "R e u n i o n e s d e t r a b a j o. P l a n e s d e m e j o r a. P r o p u e s t a s d e m e j o r a. C o m u n i d a d e s d e p r á c t i c a. S u g e r e n c i a s d e s i m p l i f i c a c i ó n d e l t r a b a j o.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co2_a1",
+                                            "text":  "Compartir con el equipo pequeños trucos o formas de trabajo que le funcionan bien y comentar ideas y sugerencias que pueden hacer el trabajo más claro o más fácil."
+                                        },
+                                        {
+                                            "id":  "co2_a2",
+                                            "text":  "Participar activamente cuando se piden sugerencias de simplificación del trabajo, contribuyendo con propuestas útiles en reuniones o espacios de trabajo."
+                                        },
+                                        {
+                                            "id":  "co2_a3",
+                                            "text":  "Proponer mejoras de forma autónoma, teniendo iniciativa para compartir ideas aunque sean pequeñas mejoras."
+                                        },
+                                        {
+                                            "id":  "co2_a4",
+                                            "text":  "Contribuir positivamente con sus sugerencias a la mejora del servicio y a la motivación del equipo."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "No mostrar interés por mejorar lo que hace o cómo se hace. No aportar ideas sobre simplificación del trabajo.",
+                                                       "basico":  "Hacer sugerencias puntuales que permitan simplificar el trabajo, aunque cueste expresarlas con claridad o necesite apoyo para concretarlas.",
+                                                       "medio":  "Proponer ideas prácticas que ayudan a mejorar tareas o procesos simplificándolos. Participar activamente cuando se piden sugerencias.",
+                                                       "alto":  "Proponer mejoras de forma autónoma, con sentido práctico, que permitan simplificar el trabajo. Contribuir positivamente a la mejora del servicio y a la motivación del equipo."
+                                                   }
+                  },
+                  {
+                      "id":  "co3",
+                      "index":  3,
+                      "title":  "Aportar sugerencias que permitan optimizar el tiempo",
+                      "description":  "Descripción: Busca hacer las tareas de forma más rápida y eficiente, sin perder calidad. Sabe que el tiempo también es un recurso valioso.",
+                      "evidencias":  "R e u n i o n e s d e t r a b a j o. P l a n e s d e m e j o r a. P r o p u e s t a s d e m e j o r a. C o m u n i d a d e s d e p r á c t i c a. S u g e r e n c i a s d e o p t i m i z a c i ó n d e l t i e m p o.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co3_a1",
+                                            "text":  "Observar su forma de trabajar para detectar si hay formas más prácticas de usar materiales, herramientas o sistemas o de hacer las tareas de forma más rápida y eficiente."
+                                        },
+                                        {
+                                            "id":  "co3_a2",
+                                            "text":  "Organizar su trabajo para aprovechar mejor la jornada laboral, evitando pasos innecesarios cuando realiza tareas repetitivas."
+                                        },
+                                        {
+                                            "id":  "co3_a3",
+                                            "text":  "Gestionar su tiempo con eficacia, cumpliendo plazos, evitando interrupciones o distracciones y priorizando tareas urgentes sin necesidad de que se lo recuerden."
+                                        },
+                                        {
+                                            "id":  "co3_a4",
+                                            "text":  "Aportar ideas que facilitan la reducción de los tiempos de realización de las tareas para contribuir a que el equipo trabaje de forma más ágil y ordenada."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "Organizar su trabajo de forma poco eficiente. Perder tiempo en tareas innecesarias o retrasarse frecuentemente.",
+                                                       "basico":  "Intentar organizarse, pero necesitar apoyo para priorizar tareas o aprovechar bien su tiempo.",
+                                                       "medio":  "Gestionar su tiempo con eficacia, cumplir plazos y evitar interrupciones o distracciones.",
+                                                       "alto":  "Planificar su trabajo con criterio, eficacia y eficiencia. Aportar sugerencias que permitan optimizar el tiempo para que el equipo trabaje de forma ágil y ordenada."
+                                                   }
+                  },
+                  {
+                      "id":  "co4",
+                      "index":  4,
+                      "title":  "Aportar sugerencias que permitan mejorar el propio desempeño",
+                      "description":  "Descripción: Muestra interés en hacer su trabajo cada vez mejor. Se esfuerza por mejorar su forma de actuar, aprender y crecer en el día a día.",
+                      "evidencias":  "R e u n i o n e s d e t r a b a j o. P l a n e s d e m e j o r a. P r o p u e s t a s d e m e j o r a. C o m u n i d a d e s d e p r á c t i c a. S u g e r e n c i a s d e m e j o r a d e l p r o p i o d e s e m p e ñ o.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co4_a1",
+                                            "text":  "Reflexionar sobre cómo puede tener más orden, limpieza, agilidad o cuidado en el trabajo diario."
+                                        },
+                                        {
+                                            "id":  "co4_a2",
+                                            "text":  "Mostrar actitud positiva hacia el aprendizaje y la mejora, pidiendo ayuda o formación cuando cree que algo puede mejorar."
+                                        },
+                                        {
+                                            "id":  "co4_a3",
+                                            "text":  "Escuchar consejos o indicaciones para hacer mejor sus tareas, ajustando su forma de trabajar cuando es necesario."
+                                        },
+                                        {
+                                            "id":  "co4_a4",
+                                            "text":  "Aportar ideas que facilitan la mejora del propio desempeño, actuando con actitud de mejora continua."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "No mostrar interés por mejorar su forma de trabajar. Repetir errores y resistirse a cambiar hábitos ineficaces.",
+                                                       "basico":  "I Reconocer sus errores y aceptar sugerencias, pero necesitar acompañamiento para aplicar mejoras.",
+                                                       "medio":  "Esforzarse por mejorar su desempeño. Escuchar, aprender y ajustar su forma de trabajar cuando es necesario.",
+                                                       "alto":  "Actuar con actitud de mejora constante aportando ideas que facilitan la mejora del propio desempeño. Buscar maneras de hacer mejor su trabajo y aplicar activamente lo que aprende."
+                                                   }
+                  },
+                  {
+                      "id":  "co5",
+                      "index":  5,
+                      "title":  "Aplicar las propuestas de mejora establecidas",
+                      "description":  "Descripción: No solo propone mejoras, sino que pone en práctica los cambios que se acuerdan para hacer mejor el trabajo.",
+                      "evidencias":  "R e u n i o n e s d e t r a b a j o. P l a n e s d e m e j o r a. P r o p u e s t a s d e m e j o r a. C o m u n i d a d e s d e p r á c t i c a. E v a l u a c i ó n c o n t i n u a.",
+                      "behaviors":  [
+                                        {
+                                            "id":  "co5_a1",
+                                            "text":  "Adaptarse a los nuevos procedimientos o formas de trabajar establecidas sin resistencia, con facilidad e incorporándolos de forma rápida y habitual."
+                                        },
+                                        {
+                                            "id":  "co5_a2",
+                                            "text":  "Mantener una actitud colaborativa durante la aplicación de los cambios o mejoras establecidas."
+                                        },
+                                        {
+                                            "id":  "co5_a3",
+                                            "text":  "Esforzarse por mantener en el tiempo las mejoras incorporadas, sin volver a los hábitos anteriores."
+                                        },
+                                        {
+                                            "id":  "co5_a4",
+                                            "text":  "Ayudar a que otras personas del equipo comprendan y apliquen las mejoras establecidas."
+                                        }
+                                    ],
+                      "area_classification_text":  {
+                                                       "sin_competencia":  "Ignorar o resistirse los cambios propuestos. Seguir haciendo las cosas como antes, incluso cuando se han establecido nuevas formas.",
+                                                       "basico":  "Intentar aplicar las mejoras, pero necesitar tiempo o apoyo. A veces olvidar los cambios o aplicarlos de forma incompleta.",
+                                                       "medio":  "Aplicar las mejoras acordadas de forma habitual. Adaptarse con facilidad y seguir las nuevas directrices en su trabajo.",
+                                                       "alto":  "Integrar los cambios de manera rápida y responsable. Ayudar a que sus compañeros y compañeras los comprendan y adopten también."
+                                                   }
+                  }
+              ]
+}
