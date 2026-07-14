@@ -158,7 +158,14 @@ function roleValue(rol){
     $("#rb-competency").textContent   = kicker;
     $("#rb-title").textContent        = rubric.rubric_title || "Rúbrica";
     $("#rb-rol").textContent          = rubric.rubric_rol || "";
-    $("#rb-definition").textContent   = rubric.rubric_definition || "";
+    // La etiqueta "Definición de la competencia:" va en negrita para diferenciarla del texto.
+    var def = rubric.rubric_definition || "";
+    var defM = def.match(/^(\s*Definici[oó]n de la competencia\s*:?)([\s\S]*)$/i);
+    if(defM){
+      $("#rb-definition").innerHTML = "<strong>" + escapeHTML(defM[1]) + "</strong>" + escapeHTML(defM[2]);
+    } else {
+      $("#rb-definition").textContent = def;
+    }
     // La frase de instrucciones va en negrita (requisito del cliente).
     $("#rb-instructions").innerHTML   = "<strong>" + escapeHTML(rubric.rubric_instructions || "") + "</strong>";
     document.title = (rubric.rubric_title || "Rúbrica") + " · " + (rubric.rubric_rol || "");
@@ -694,6 +701,41 @@ function buildReportPDF(JsPDF, rubric, selections, scores, studentName, logo){
     ink(color); doc.setFont("helvetica", style || "normal"); doc.setFontSize(size);
     doc.text(lines, M, y + lh * 0.8); y += lines.length * lh + (gap == null ? 2 : gap);
   }
+  // Párrafo con "runs" de estilo mixto (p.ej. etiqueta en negrita + texto normal),
+  // con word-wrap manual respetando CW. Mantiene el mismo control de página que paragraph().
+  function paragraphRuns(runs, size, color, gap){
+    var lh = size * 0.3528 * 1.32;
+    doc.setFont("helvetica", "normal"); doc.setFontSize(size);
+    var space = doc.getTextWidth(" ");
+    var tokens = [];
+    runs.forEach(function(run){
+      var st = run.style || "normal";
+      String(run.t == null ? "" : run.t).split(/\s+/).forEach(function(w){
+        if(w !== "") tokens.push({ t: w, style: st });
+      });
+    });
+    var lines = [], cur = [], curW = 0;
+    tokens.forEach(function(tok){
+      doc.setFont("helvetica", tok.style); tok.w = doc.getTextWidth(tok.t);
+      var add = (cur.length ? space : 0) + tok.w;
+      if(curW + add > CW && cur.length){ lines.push(cur); cur = []; curW = 0; add = tok.w; }
+      cur.push(tok); curW += add;
+    });
+    if(cur.length) lines.push(cur);
+    ensure(lines.length * lh);
+    ink(color);
+    var yy = y + lh * 0.8;
+    lines.forEach(function(line){
+      var x = M;
+      line.forEach(function(tok, i){
+        if(i) x += space;
+        doc.setFont("helvetica", tok.style); doc.setFontSize(size);
+        doc.text(tok.t, x, yy); x += tok.w;
+      });
+      yy += lh;
+    });
+    y += lines.length * lh + (gap == null ? 2 : gap);
+  }
 
   /* -- Cabecera de marca (apilado dinámico: soporta títulos largos sin solaparse) -- */
   var textX = M, logoH = 16;
@@ -716,8 +758,15 @@ function buildReportPDF(JsPDF, rubric, selections, scores, studentName, logo){
   doc.setDrawColor(GREEN[0], GREEN[1], GREEN[2]); doc.setLineWidth(0.7);
   doc.line(M, y, M + CW, y); y += 6;
 
-  /* -- Definición + meta -- */
-  if(rubric.rubric_definition) paragraph(rubric.rubric_definition, 9.5, MUTED, "normal", 3);
+  /* -- Definición + meta (etiqueta en negrita, como en pantalla) -- */
+  if(rubric.rubric_definition){
+    var defM = rubric.rubric_definition.match(/^(\s*Definici[oó]n de la competencia\s*:?)([\s\S]*)$/i);
+    if(defM){
+      paragraphRuns([{ t: defM[1].trim(), style: "bold" }, { t: defM[2], style: "normal" }], 9.5, MUTED, 3);
+    } else {
+      paragraph(rubric.rubric_definition, 9.5, MUTED, "normal", 3);
+    }
+  }
   var fecha = "";
   try{ fecha = new Date().toLocaleDateString("es-ES", { day: "2-digit", month: "long", year: "numeric" }); }catch(e){}
   var metaParts = [];
